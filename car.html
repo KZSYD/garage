@@ -39,6 +39,7 @@
   <script src="js/data.js"></script>
   <script src="js/favorites.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/effects.js"></script>
   <script>
     (function () {
     var BRAND_COLORS = {
@@ -150,7 +151,7 @@
     }
     html += '<section class="cinema" style="--car-color:' + themeColor + ';">';
     html += '  <div class="cinema-glow"></div>';
-    html += '  <div class="cinema-stage drift-stage">';
+    html += '  <div class="cinema-stage drift-stage" data-glow>';
     html += '    <span class="cinema-sweep"></span>';
     // 3D 漂移视频（Remotion 渲染；仅收藏内有视频的车型使用）
     var driftVideo = car.id === 'mercedes-g63' ? 'video/g63-drift.mp4' : '';
@@ -222,7 +223,7 @@
 
     // ============ 3. 图库（多图轮播） ============
     if (car.images && car.images.length > 1) {
-      html += '<div class="panel reveal" id="gallery"><h3><span class="sec-no">02</span> 图库</h3>';
+      html += '<div class="panel reveal" id="gallery" data-glow><h3><span class="sec-no">02</span> 图库</h3>';
       html += '  <div class="gallery">';
       html += '    <button class="gal-arrow prev" aria-label="上一张">‹</button>';
       html += '    <div class="gallery-main" id="gal-main"></div>';
@@ -254,13 +255,13 @@
 
     // ============ 6. 在售配置（性能条 + 徽章） ============
     if (car.trims && car.trims.length) {
-      html += '<div class="panel reveal" id="trims"><h3><span class="sec-no">05</span> ' + esc(car.year || '') + ' 在售配置</h3><div class="trim-list">';
+      html += '<div class="panel reveal" id="trims" data-glow><h3><span class="sec-no">05</span> ' + esc(car.year || '') + ' 在售配置</h3><div class="trim-list">';
       for (var ti = 0; ti < car.trims.length; ti++) {
         var trim = car.trims[ti];
         var ta = LIB.numOrNull(trim.acceleration);
         var th = LIB.numOrNull(trim.power);
         var tr2 = LIB.numOrNull(trim.range);
-        html += '<div class="trim-card" style="--car-color:' + themeColor + ';">';
+        html += '<div class="trim-card" data-tilt style="--car-color:' + themeColor + ';">';
         html += '  <div class="trim-header">';
         html += '    <div><div class="trim-name">' + esc(trim.name) + '</div>';
         html += '      <div class="trim-badges">';
@@ -417,6 +418,9 @@
       for (var gi = 0; gi < gImgs.length; gi++) dotsHtml += '<button data-i="' + gi + '"></button>';
       dotsWrap.innerHTML = dotsHtml;
       function renderGal(i) {
+        galMain.classList.remove('flash');
+        void galMain.offsetWidth;
+        galMain.classList.add('flash');
         galMain.innerHTML = '<img src="' + esc(gImgs[i]) + '" alt="' + esc(car.name) + '" loading="lazy" onerror="this.parentNode.innerHTML=\'<div class=\\\'no-img\\\'>暂无图片</div>\'">';
         var dots = dotsWrap.querySelectorAll('button');
         for (var d = 0; d < dots.length; d++) dots[d].classList.toggle('active', d === i);
@@ -444,6 +448,7 @@
     }
 
     LIB.initSearch();
+    if (window.FX) FX.refresh();
     })();
   </script>
 </body>

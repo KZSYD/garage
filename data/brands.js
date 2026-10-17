@@ -46,5 +46,13 @@ var BRANDS_DATA = [
     "logo": "images/brands/xpeng.png",
     "country": "中国",
     "description": "小鹏汽车是中国领先的智能电动汽车品牌，以「未来出行探索者」为理念，主打XNGP全场景智能辅助驾驶和800V高压快充技术。产品覆盖P系列轿跑、G系列SUV及X9旗舰MPV。"
+  },
+  {
+    "id": "mercedes",
+    "name": "奔驰",
+    "name_en": "Mercedes-Benz",
+    "logo": "images/brands/mercedes.png",
+    "country": "德国",
+    "description": "梅赛德斯-奔驰是德国百年豪华汽车品牌，三叉星辉照耀全球。G级越野车自1979年诞生以来，以方盒子造型、非承载式车身和三把差速锁成为越野图腾，被车迷称为「男人的大G」。"
   }
 ];

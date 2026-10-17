@@ -9,7 +9,7 @@
 <body>
 
   <nav class="nav">
-    <a class="nav-logo" href="index.html">🏁 男人的梦想车库</a>
+    <a class="nav-logo" href="index.html"><span class="logo-mark"></span>男人的梦想车库</a>
     <div class="nav-search">
       <input type="text" placeholder="搜索品牌 / 车型，如「SU7」「汉」「Model Y」…">
     </div>
@@ -37,7 +37,7 @@
   </main>
 
   <footer class="footer">
-    <div><span class="foot-grad">🏁 男人的梦想车库</span> · 数据仅供参考，具体以官方发布为准</div>
+    <div><span class="foot-grad"><span class="logo-mark"></span>男人的梦想车库</span> · 数据仅供参考，具体以官方发布为准</div>
   </footer>
 
   <script src="data/brands.js"></script>
@@ -72,15 +72,12 @@
         var cars = getCarsByBrand(brandId);
         var heroHtml =
           '<div class="brand-hero fade-up">' +
-          '<div class="bh-top">' +
-          '<div class="brand-logo-lg"><span>' + LIB.esc(brand.name.charAt(0)) + '</span>' + logo + '</div>' +
-          '<div>' +
+          '<div class="bh-left">' +
           '<h1>' + LIB.esc(brand.name) + '</h1>' +
-          '<div class="bh-en">' + LIB.esc(brand.name_en || '') + '</div>' +
-          '<div class="bh-meta">' + LIB.esc(brand.country || '') + ' · ' + cars.length + ' 款车型</div>' +
-          '</div>' +
-          '</div>' +
+          '<div class="bh-en">' + LIB.esc(brand.name_en || '') + ' · ' + LIB.esc(brand.country || '') + '</div>' +
           (brand.description ? '<div class="bh-desc">' + LIB.esc(brand.description) + '</div>' : '') +
+          '</div>' +
+          '<div class="bh-stats"><div class="num">' + cars.length + '</div><div class="lbl">款车型</div></div>' +
           '</div>';
         document.getElementById('brand-hero').innerHTML = heroHtml;
 

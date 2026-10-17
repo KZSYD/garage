@@ -1314,3 +1314,258 @@ button { font-family: inherit; }
   .spec-item { gap: 12px; }
   .trim-card { padding: 20px 16px; }
 }
+
+/* ============================================================
+   视觉特效系统（FX 引擎配套样式）
+   ============================================================ */
+
+/* ---------- 背景网格 + 扫描线 ---------- */
+.fx-grid {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(46, 107, 255, 0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(46, 107, 255, 0.028) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(80% 70% at 50% 35%, #000 30%, transparent 100%);
+  -webkit-mask-image: radial-gradient(80% 70% at 50% 35%, #000 30%, transparent 100%);
+  animation: gridDrift 14s linear infinite;
+}
+
+@keyframes gridDrift {
+  from { background-position: 0 0, 0 0; }
+  to { background-position: 56px 56px, 56px 56px; }
+}
+
+.fx-scanline {
+  position: fixed;
+  left: 0; right: 0;
+  top: -180px;
+  height: 180px;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent, rgba(46, 107, 255, 0.045), transparent);
+  animation: scanDrop 9s linear infinite;
+}
+
+@keyframes scanDrop {
+  0% { top: -180px; }
+  100% { top: 110vh; }
+}
+
+/* ---------- 粒子画布 ---------- */
+#fx-particles {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ---------- 光标光晕 ---------- */
+#fx-spot {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(46, 107, 255, 0.07), rgba(46, 107, 255, 0.028) 38%, transparent 70%);
+  transition: transform 0.12s ease-out;
+  will-change: transform;
+}
+
+/* ---------- 流星 ---------- */
+.fx-meteor {
+  position: fixed;
+  width: 130px;
+  height: 1.5px;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(240, 198, 116, 0.9), rgba(46, 107, 255, 0.35), transparent);
+  transform: rotate(215deg);
+  opacity: 0;
+  animation: meteorFall 1.6s ease-out forwards;
+}
+
+@keyframes meteorFall {
+  0% { opacity: 0; transform: rotate(215deg) translateX(0) translateY(0); }
+  12% { opacity: 1; }
+  100% { opacity: 0; transform: rotate(215deg) translateX(-62vw) translateY(38vh); }
+}
+
+/* ---------- Loading 屏 ---------- */
+.fx-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #060708;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease, visibility 0.6s;
+}
+
+.fx-loader.done { opacity: 0; visibility: hidden; }
+
+.fx-loader-inner { text-align: center; width: 240px; }
+
+.fx-loader-mark {
+  width: 22px; height: 22px;
+  margin: 0 auto 18px;
+  background: var(--accent);
+  transform: rotate(45deg);
+  animation: loaderSpin 1.4s ease-in-out infinite;
+}
+
+@keyframes loaderSpin {
+  0%, 100% { transform: rotate(45deg) scale(1); opacity: 1; }
+  50% { transform: rotate(225deg) scale(0.72); opacity: 0.5; }
+}
+
+.fx-loader-text {
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: var(--text-faint);
+  margin-bottom: 16px;
+}
+
+.fx-loader-bar {
+  height: 2px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.fx-loader-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--accent), var(--gold));
+  transition: width 0.25s ease;
+}
+
+/* ---------- 卡片光斑（data-glow 元素） ---------- */
+[data-glow] {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-glow]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(220px circle at var(--mx, 50%) var(--my, 50%), rgba(46, 107, 255, 0.13), transparent 68%);
+  opacity: 0;
+  transition: opacity 0.35s;
+}
+
+[data-glow]:hover::before { opacity: 1; }
+[data-glow] > * { position: relative; z-index: 1; }
+
+/* ---------- 3D 倾斜（data-tilt 元素） ---------- */
+[data-tilt] {
+  transition: transform 0.22s ease-out, box-shadow 0.35s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+[data-tilt]:hover {
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55), 0 0 30px rgba(46, 107, 255, 0.12);
+}
+
+/* ---------- 首屏大标题流光 ---------- */
+.landing-title {
+  position: relative;
+}
+
+.landing-title::after {
+  content: "";
+  position: absolute;
+  left: -12%;
+  right: -12%;
+  bottom: -14px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), var(--accent), transparent);
+  background-size: 220% 100%;
+  animation: titleShimmer 4.5s linear infinite;
+  opacity: 0.85;
+}
+
+@keyframes titleShimmer {
+  0% { background-position: 130% 0; }
+  100% { background-position: -130% 0; }
+}
+
+/* ---------- 按钮流光 ---------- */
+.show-btn::after {
+  content: "";
+  position: absolute;
+  top: -60%;
+  bottom: -60%;
+  width: 44px;
+  left: -60px;
+  background: linear-gradient(100deg, transparent, rgba(255,255,255,0.14), transparent);
+  transform: skewX(-18deg);
+  transition: left 0.55s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.show-btn:hover::after { left: 130%; }
+
+/* ---------- 车图辉光脉冲 ---------- */
+.show-imgwrap img {
+  animation: carGlowPulse 5s ease-in-out infinite;
+}
+
+@keyframes carGlowPulse {
+  0%, 100% { filter: saturate(0.92) contrast(1.04) drop-shadow(0 0 0 rgba(46,107,255,0)); }
+  50% { filter: saturate(1.04) contrast(1.06) drop-shadow(0 0 26px rgba(46,107,255,0.28)); }
+}
+
+/* ---------- 数字计数器样式 ---------- */
+[data-count] { display: inline-block; }
+
+/* ---------- 文字渐入增强 ---------- */
+.fade-up { animation: fadeUp 0.55s ease both; }
+
+/* ---------- 细节点缀 ---------- */
+.dot-grid {
+  display: flex;
+  gap: 5px;
+  margin-top: 14px;
+}
+
+.dot-grid i {
+  width: 4px; height: 4px;
+  background: var(--gold);
+  opacity: 0.7;
+  animation: dotBlink 2.2s ease-in-out infinite;
+}
+
+.dot-grid i:nth-child(2) { animation-delay: 0.3s; }
+.dot-grid i:nth-child(3) { animation-delay: 0.6s; }
+.dot-grid i:nth-child(4) { animation-delay: 0.9s; }
+
+@keyframes dotBlink {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 1; }
+}
+
+/* ---------- 图库闪白过渡 ---------- */
+.gallery-main.flash { animation: galleryFlash 0.35s ease; }
+
+@keyframes galleryFlash {
+  0% { filter: brightness(1); }
+  40% { filter: brightness(2.4) saturate(0.3); }
+  100% { filter: brightness(1); }
+}
+
+/* ---------- 移动端降级 ---------- */
+@media (max-width: 640px) {
+  .fx-grid { background-size: 40px 40px; }
+  #fx-spot { display: none; }
+  .fx-meteor { width: 90px; }
+}

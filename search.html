@@ -21,7 +21,7 @@
   </nav>
 
   <main class="container">
-    <div class="search-header">
+    <div class="search-header" data-glow>
       <h1>🔍 搜索结果</h1>
       <div class="sh-sub" id="sh-sub"></div>
     </div>
@@ -39,6 +39,7 @@
   <script src="data/cars.js"></script>
   <script src="js/data.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/effects.js"></script>
   <script>
     var params = new URLSearchParams(window.location.search);
     var q = (params.get('q') || '').trim();

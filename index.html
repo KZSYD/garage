@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>铃铛的车库 - 我的收藏</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 导航 -->
+  <nav class="nav">
+    <a class="nav-logo" href="index.html">🔔 铃铛的车库</a>
+    <div class="nav-search">
+      <input type="text" placeholder="搜索品牌 / 车型…">
+    </div>
+    <div class="nav-links">
+      <a href="#showcase" class="active">我的收藏</a>
+      <a href="#archive">车库档案</a>
+    </div>
+  </nav>
+
+  <!-- 开场 -->
+  <header class="landing" id="top">
+    <div class="landing-glow"></div>
+    <h1 class="landing-title">我的<span>车库</span></h1>
+    <p class="landing-sub">不罗列所有车型，只陈列让我心动的那几台</p>
+    <div class="landing-stats">
+      <div class="landing-stat"><div class="num" id="stat-favs">--</div><div class="label">台心头好</div></div>
+      <div class="landing-stat"><div class="num" id="stat-brands">--</div><div class="label">个品牌</div></div>
+      <div class="landing-stat"><div class="num" id="stat-hp">--</div><div class="label">匹最强马力</div></div>
+    </div>
+    <div class="scroll-hint" id="scroll-hint">
+      <span>向下滑动，看它们出场</span>
+      <span class="arrow">↓</span>
+    </div>
+  </header>
+
+  <!-- 我的收藏 · 全屏展示 -->
+  <main id="showcase">
+    <div id="showcase-root"></div>
+  </main>
+
+  <!-- 车库档案 -->
+  <footer class="footer" id="archive">
+    <h3 class="archive-title">🏛️ 车库档案 · 全部品牌</h3>
+    <div class="archive-links" id="archive-links"></div>
+    <div style="margin-top:28px;color:var(--text-faint);font-size:13px;">
+      <span class="foot-grad">🔔 铃铛的车库</span> · 数据仅供参考 · 2026
+    </div>
+  </footer>
+
+  <script src="data/brands.js"></script>
+  <script src="data/cars.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    (function () {
+    // ===== 开场统计 =====
+    var favCars = FAVORITES_DATA.map(function (f) { return getCarById(f.id); }).filter(Boolean);
+    var favBrandIds = {};
+    var maxHp = 0;
+    for (var i = 0; i < favCars.length; i++) {
+      favBrandIds[favCars[i].brand_id] = true;
+      if (favCars[i].trims) {
+        for (var t = 0; t < favCars[i].trims.length; t++) {
+          var hp = LIB.numOrNull(favCars[i].trims[t].power);
+          if (hp && hp > maxHp) maxHp = hp;
+        }
+      }
+    }
+    document.getElementById('stat-favs').textContent = favCars.length;
+    document.getElementById('stat-brands').textContent = Object.keys(favBrandIds).length;
+    document.getElementById('stat-hp').textContent = maxHp || '—';
+    // 空车库时隐藏“下滑”提示
+    if (!favCars.length) document.getElementById('scroll-hint').style.display = 'none';
+
+    // ===== 车库档案链接（无收藏时隐藏） =====
+    var archiveEl = document.getElementById('archive');
+    if (!favCars.length) { archiveEl.style.display = 'none'; }
+    var linksHtml = '';
+    for (var b = 0; b < BRANDS_DATA.length; b++) {
+      linksHtml += '<a class="archive-link" href="brand.html?brand=' + encodeURIComponent(BRANDS_DATA[b].id) + '">' + LIB.esc(BRANDS_DATA[b].name) + '</a>';
+    }
+    document.getElementById('archive-links').innerHTML = linksHtml;
+
+    // ===== 收藏展示区 =====
+    var root = document.getElementById('showcase-root');
+
+    // 空车库：显示「装修中」状态
+    if (!favCars.length) {
+      root.innerHTML =
+        '<section class="show in-view" style="min-height:70vh;display:flex;align-items:center;justify-content:center;border-bottom:none;">' +
+        '  <div class="empty">' +
+        '    <div class="empty-emoji">🏗️</div>' +
+        '    <div style="font-size:22px;font-weight:800;color:var(--text);margin-bottom:8px;">车库装修中</div>' +
+        '    <div>车都被你开走了，等你重新整理好收藏，它们会一辆一辆驶回来</div>' +
+        '  </div>' +
+        '</section>';
+      LIB.initSearch();
+      return;
+    }
+
+    var html = '';
+
+    for (var k = 0; k < FAVORITES_DATA.length; k++) {
+      var fav = FAVORITES_DATA[k];
+      var car = getCarById(fav.id);
+      if (!car) continue;
+      var brand = getBrandById(car.brand_id);
+      var img = car.images && car.images[0] ? car.images[0] : '';
+      var p = LIB.minPrice(car);
+      var reverse = k % 2 === 1;
+
+      // 提取帅点参数
+      var bestAcc = null, bestRange = null;
+      if (car.trims) {
+        for (var s = 0; s < car.trims.length; s++) {
+          var a = LIB.numOrNull(car.trims[s].acceleration);
+          if (a != null && (bestAcc == null || a < bestAcc)) bestAcc = a;
+          var r = LIB.numOrNull(car.trims[s].range);
+          if (r != null && (bestRange == null || r > bestRange)) bestRange = r;
+        }
+      }
+
+      var chips = [];
+      if (bestAcc != null) chips.push('零百 ' + bestAcc + ' 秒');
+      if (bestRange != null) chips.push('续航 ' + bestRange + ' km');
+      if (p != null) chips.push(p + ' 万起');
+      chips.push(car.year + ' · ' + (car.type || ''));
+
+      html +=
+        '<section class="show" id="show-' + k + '" style="--car-color:' + fav.color + (reverse ? ';--from:80px' : ';--from:-80px') + ';">' +
+        '  <div class="show-glow"></div>' +
+        '  <div class="show-inner' + (reverse ? ' rev' : '') + '">' +
+        '    <div class="show-text">' +
+        '      <div class="show-brand">' + LIB.esc(brand ? brand.name : '') + '</div>' +
+        '      <h2 class="show-name">' + LIB.esc(car.name) + '</h2>' +
+        '      <p class="show-tagline">' + LIB.esc(fav.tagline) + '</p>' +
+        '      <div class="show-chips">';
+      for (var c = 0; c < chips.length; c++) {
+        html += '<span class="show-chip" style="transition-delay:' + (0.25 + c * 0.09) + 's">' + LIB.esc(chips[c]) + '</span>';
+      }
+      html +=
+        '      </div>' +
+        '      <a class="show-btn" style="transition-delay:0.65s" href="car.html?id=' + encodeURIComponent(car.id) + '">看它更多 →</a>' +
+        '    </div>' +
+        '    <div class="show-stage">' +
+        '      <span class="show-sweep"></span>' +
+        '      <div class="show-imgwrap">' +
+        (img ? '<img src="' + LIB.esc(img) + '" alt="' + LIB.esc(car.name) + '" loading="lazy" onerror="this.parentNode.innerHTML=\'<div class=\\\'no-img\\\'>暂无图片</div>\'">' : '<div class="no-img">暂无图片</div>') +
+        '      </div>' +
+        '      <div class="show-plate">' + LIB.esc(brand ? brand.name + ' ' : '') + LIB.esc(car.name) + '</div>' +
+        '    </div>' +
+        '  </div>' +
+        '</section>';
+    }
+    root.innerHTML = html;
+
+    // ===== 滚动入场动画 =====
+    var observer = new IntersectionObserver(function (entries) {
+      for (var e = 0; e < entries.length; e++) {
+        if (entries[e].isIntersecting) {
+          entries[e].target.classList.add('in-view');
+          observer.unobserve(entries[e].target);
+        }
+      }
+    }, { threshold: 0.35 });
+    var shows = root.querySelectorAll('.show');
+    for (var i2 = 0; i2 < shows.length; i2++) observer.observe(shows[i2]);
+
+    LIB.initSearch();
+    })();
+  </script>
+</body>
+</html>

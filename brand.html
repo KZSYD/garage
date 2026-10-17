@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>品牌车型 - 铃铛的车库</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav-logo" href="index.html">🔔 铃铛的车库</a>
+    <div class="nav-search">
+      <input type="text" placeholder="搜索品牌 / 车型，如「SU7」「汉」「Model Y」…">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="index.html#showcase">我的收藏</a>
+      <a href="index.html#archive">车库档案</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="index.html">首页</a><span class="sep">›</span><span id="bc-brand">品牌</span>
+    </div>
+
+    <div id="brand-hero"></div>
+
+    <section class="section" style="margin-top:28px;">
+      <div id="toolbar">
+        <input type="text" id="filter-input" placeholder="🔍 在当前品牌内搜索车型…">
+      </div>
+      <div class="chips" id="type-chips"></div>
+      <div class="car-grid" id="car-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><span class="foot-grad">🔔 铃铛的车库</span> · 数据仅供参考，具体以官方发布为准</div>
+  </footer>
+
+  <script src="data/brands.js"></script>
+  <script src="data/cars.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    var params = new URLSearchParams(window.location.search);
+    var brandId = params.get('brand');
+
+    var gridEl = document.getElementById('car-grid');
+
+    function emptyMsg(msg) {
+      return '<div class="empty"><div class="empty-emoji">🔍</div>' + msg + '</div>';
+    }
+
+    if (!brandId) {
+      gridEl.innerHTML = emptyMsg('缺少品牌参数，请从首页选择品牌');
+    } else {
+      var brand = getBrandById(brandId);
+
+      if (!brand) {
+        gridEl.innerHTML = emptyMsg('未找到该品牌');
+      } else {
+        document.title = brand.name + ' - 铃铛的车库';
+        document.getElementById('bc-brand').textContent = brand.name;
+
+        // ===== 品牌头部 =====
+        var logo = brand.logo
+          ? '<img src="' + LIB.esc(brand.logo) + '" alt="' + LIB.esc(brand.name) + '" onload="this.previousElementSibling.style.display=\'none\'" onerror="this.style.display=\'none\'">'
+          : '';
+        var cars = getCarsByBrand(brandId);
+        var heroHtml =
+          '<div class="brand-hero fade-up">' +
+          '<div class="bh-top">' +
+          '<div class="brand-logo-lg"><span>' + LIB.esc(brand.name.charAt(0)) + '</span>' + logo + '</div>' +
+          '<div>' +
+          '<h1>' + LIB.esc(brand.name) + '</h1>' +
+          '<div class="bh-en">' + LIB.esc(brand.name_en || '') + '</div>' +
+          '<div class="bh-meta">' + LIB.esc(brand.country || '') + ' · ' + cars.length + ' 款车型</div>' +
+          '</div>' +
+          '</div>' +
+          (brand.description ? '<div class="bh-desc">' + LIB.esc(brand.description) + '</div>' : '') +
+          '</div>';
+        document.getElementById('brand-hero').innerHTML = heroHtml;
+
+        // ===== 类型筛选 chips =====
+        var types = {};
+        for (var i = 0; i < cars.length; i++) {
+          var t = (cars[i].type || '其他').trim();
+          types[t] = (types[t] || 0) + 1;
+        }
+        var chipsHtml = '<button class="chip active" data-type="">全部（' + cars.length + '）</button>';
+        for (var typeName in types) {
+          chipsHtml += '<button class="chip" data-type="' + LIB.esc(typeName) + '">' + LIB.esc(typeName) + '（' + types[typeName] + '）</button>';
+        }
+        document.getElementById('type-chips').innerHTML = chipsHtml;
+
+        var curType = '';
+        var curKw = '';
+
+        function render() {
+          var list = cars.filter(function (c) {
+            var okType = !curType || (c.type || '').indexOf(curType) === 0;
+            var okKw = !curKw;
+            if (!okKw) {
+              var hay = ((c.name || '') + ' ' + (c.name_en || '') + ' ' + (c.sub_name || '') + ' ' + (c.type || '') + ' ' + (c.year || '')).toLowerCase();
+              okKw = hay.indexOf(curKw.toLowerCase()) !== -1;
+            }
+            return okType && okKw;
+          });
+
+          var html = '';
+          for (var i = 0; i < list.length; i++) {
+            html += LIB.carCardHTML(list[i], i);
+          }
+          gridEl.innerHTML = html || emptyMsg('没有找到匹配的车型');
+        }
+
+        document.getElementById('type-chips').addEventListener('click', function (e) {
+          var btn = e.target.closest('.chip');
+          if (!btn) return;
+          var chips = document.querySelectorAll('#type-chips .chip');
+          for (var c = 0; c < chips.length; c++) chips[c].classList.remove('active');
+          btn.classList.add('active');
+          curType = btn.getAttribute('data-type');
+          render();
+        });
+
+        document.getElementById('filter-input').addEventListener('input', function (e) {
+          curKw = e.target.value.trim();
+          render();
+        });
+
+        render();
+      }
+    }
+
+    LIB.initSearch();
+  </script>
+</body>
+</html>

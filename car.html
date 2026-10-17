@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>车型详情 - 铃铛的车库</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav-logo" href="index.html">🔔 铃铛的车库</a>
+    <div class="nav-search">
+      <input type="text" placeholder="搜索品牌 / 车型，如「SU7」「汉」「Model Y」…">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="index.html#showcase">我的收藏</a>
+      <a href="index.html#archive">车库档案</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="index.html">首页</a><span class="sep">›</span><a href="brand.html" id="bc-brand-link">品牌</a><span class="sep">›</span><span id="bc-car">车型</span>
+    </div>
+
+    <div id="car-detail"></div>
+  </main>
+
+  <footer class="footer">
+    <div><span class="foot-grad">🔔 铃铛的车库</span> · 数据仅供参考，具体以官方发布为准</div>
+  </footer>
+
+  <script src="data/brands.js"></script>
+  <script src="data/cars.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    var params = new URLSearchParams(window.location.search);
+    var carId = params.get('id');
+    var detailEl = document.getElementById('car-detail');
+
+    function emptyMsg(msg) {
+      return '<div class="empty"><div class="empty-emoji">🚗</div>' + msg + '</div>';
+    }
+
+    if (!carId) {
+      detailEl.innerHTML = emptyMsg('缺少车型参数');
+    } else {
+      var car = getCarById(carId);
+
+      if (!car) {
+        detailEl.innerHTML = emptyMsg('未找到该车型');
+      } else {
+        var brand = getBrandById(car.brand_id);
+
+        document.title = car.name + ' - 铃铛的车库';
+        if (brand) {
+          document.getElementById('bc-brand-link').href = 'brand.html?brand=' + encodeURIComponent(brand.id);
+          document.getElementById('bc-brand-link').textContent = brand.name;
+        }
+        document.getElementById('bc-car').textContent = car.name;
+
+        var html = '';
+
+        // ===== 顶部：大图 + 标题信息 =====
+        var img = car.images && car.images[0] ? car.images[0] : '';
+        var pMin = LIB.minPrice(car);
+        var pFirst = car.trims && car.trims[0] ? car.trims[0].price : '';
+
+        html += '<div class="detail-top fade-up">';
+        html += '  <div class="detail-image-card">' +
+                (img ? '<img src="' + LIB.esc(img) + '" alt="' + LIB.esc(car.name) + '" onerror="this.parentNode.innerHTML=\'<div class=\\\'no-img\\\'>暂无图片</div>\'">' : '<div class="no-img">暂无图片</div>') +
+                '</div>';
+        html += '  <div class="detail-head-info">';
+        html += '    <h1>' + LIB.esc(car.name) + (car.sub_name ? ' ' + LIB.esc(car.sub_name) : '') + '</h1>';
+        html += '    <div class="dh-sub">' +
+                LIB.esc((brand ? brand.name + ' ' : '') + (car.name_en || '')) + ' · ' + LIB.esc(car.year || '') + ' · ' + LIB.esc(car.type || '') +
+                '</div>';
+        if (pMin != null) {
+          html += '    <div class="dh-price">' + LIB.esc(pFirst) + '<small>全系 ' + LIB.esc(pMin) + ' 万起</small></div>';
+        }
+        html += '  </div>';
+        html += '</div>';
+
+        // ===== 核心参数速览 =====
+        var qs = [];
+        if (car.body && car.body.length) qs.push({ l: '车长', v: car.body.length });
+        if (car.body && car.body.wheelbase) qs.push({ l: '轴距', v: car.body.wheelbase });
+        var bestTrim = null;
+        if (car.trims) {
+          for (var t = 0; t < car.trims.length; t++) {
+            var acc = LIB.numOrNull(car.trims[t].acceleration);
+            if (acc != null && (!bestTrim || acc < LIB.numOrNull(bestTrim.acceleration))) bestTrim = car.trims[t];
+          }
+        }
+        if (bestTrim) {
+          if (bestTrim.acceleration) qs.push({ l: '最快零百', v: bestTrim.acceleration });
+          if (bestTrim.range && bestTrim.range !== '-') qs.push({ l: '最长续航', v: bestTrim.range });
+        }
+        if (qs.length) {
+          html += '<div class="quick-specs fade-up d1">';
+          for (var q = 0; q < qs.length; q++) {
+            html += '<div class="quick-spec"><div class="qs-label">' + LIB.esc(qs[q].l) + '</div><div class="qs-value">' + LIB.esc(qs[q].v) + '</div></div>';
+          }
+          html += '</div>';
+        }
+
+        // ===== 车身参数 =====
+        if (car.body) {
+          var bodyMap = { platform: '平台', length: '车长', width: '车宽', height: '车高', wheelbase: '轴距', drive: '驱动形式', transmission: '变速箱' };
+          html += '<div class="panel fade-up d1"><h3>📐 车身参数</h3><div class="specs-grid">';
+          for (var bk in car.body) {
+            if (car.body.hasOwnProperty(bk)) {
+              html += '<div class="spec-item"><div class="spec-label">' + LIB.esc(bodyMap[bk] || bk) + '</div><div class="spec-value">' + LIB.esc(car.body[bk]) + '</div></div>';
+            }
+          }
+          html += '</div></div>';
+        }
+
+        // ===== 全系标配 =====
+        if (car.common_features && car.common_features.length) {
+          html += '<div class="panel fade-up d1"><h3>✨ 全系标配</h3><div class="tag-list">';
+          for (var cf = 0; cf < car.common_features.length; cf++) {
+            html += '<span class="tag">' + LIB.esc(car.common_features[cf]) + '</span>';
+          }
+          html += '</div></div>';
+        }
+
+        // ===== 在售配置 =====
+        if (car.trims && car.trims.length) {
+          html += '<div class="panel fade-up d2"><h3>💰 ' + LIB.esc(car.year || '') + ' 在售车型 &amp; 价格</h3><div class="trim-list">';
+          for (var ti = 0; ti < car.trims.length; ti++) {
+            var trim = car.trims[ti];
+            html += '<div class="trim-card">';
+            html += '  <div class="trim-header"><div class="trim-name">' + LIB.esc(trim.name) + '</div><div class="trim-price">' + LIB.esc(trim.price) + '</div></div>';
+            html += '  <div class="trim-specs">';
+            if (trim.engine && trim.engine !== '-') html += '<div class="trim-spec-item"><span class="trim-spec-label">驱动</span><span>' + LIB.esc(trim.engine) + '</span></div>';
+            if (trim.power && trim.power !== '-') html += '<div class="trim-spec-item"><span class="trim-spec-label">马力</span><span>' + LIB.esc(trim.power) + '</span></div>';
+            if (trim.torque && trim.torque !== '-') html += '<div class="trim-spec-item"><span class="trim-spec-label">扭矩</span><span>' + LIB.esc(trim.torque) + '</span></div>';
+            if (trim.acceleration && trim.acceleration !== '-') html += '<div class="trim-spec-item"><span class="trim-spec-label">零百加速</span><span>' + LIB.esc(trim.acceleration) + '</span></div>';
+            if (trim.battery && trim.battery !== '-') html += '<div class="trim-spec-item"><span class="trim-spec-label">电池</span><span>' + LIB.esc(trim.battery) + '</span></div>';
+            if (trim.range && trim.range !== '-') html += '<div class="trim-spec-item"><span class="trim-spec-label">续航</span><span>' + LIB.esc(trim.range) + '</span></div>';
+            html += '  </div>';
+            if (trim.features && trim.features.length) {
+              html += '  <div class="trim-features">';
+              for (var tf = 0; tf < trim.features.length; tf++) html += '<span class="tag">' + LIB.esc(trim.features[tf]) + '</span>';
+              html += '  </div>';
+            }
+            html += '</div>';
+          }
+          html += '</div></div>';
+        }
+
+        // ===== 外观内饰选项 =====
+        var hasOpt = (car.paint_colors && car.paint_colors.length) || (car.interior_options && car.interior_options.length) || (car.wheels && car.wheels.length);
+        if (hasOpt) {
+          html += '<div class="panel fade-up d2"><h3>🎨 外观 &amp; 内饰选项</h3>';
+          var optGroups = [
+            { label: '车漆颜色', items: car.paint_colors },
+            { label: '内饰颜色', items: car.interior_options },
+            { label: '轮毂', items: car.wheels }
+          ];
+          for (var og = 0; og < optGroups.length; og++) {
+            if (optGroups[og].items && optGroups[og].items.length) {
+              html += '<div class="options-row"><div class="options-label">' + optGroups[og].label + '</div><div class="options-tags">';
+              for (var oi = 0; oi < optGroups[og].items.length; oi++) {
+                html += '<span class="tag">' + LIB.esc(optGroups[og].items[oi]) + '</span>';
+              }
+              html += '</div></div>';
+            }
+          }
+          html += '</div>';
+        }
+
+        // ===== 简介 =====
+        if (car.description) {
+          html += '<div class="panel fade-up d3"><h3>📖 车型简介</h3><p class="desc-text">' + LIB.esc(car.description) + '</p></div>';
+        }
+
+        detailEl.innerHTML = html;
+      }
+    }
+
+    LIB.initSearch();
+  </script>
+</body>
+</html>

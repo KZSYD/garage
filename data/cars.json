@@ -1,0 +1,4364 @@
+[
+  {
+    "id": "xiaomi-su7",
+    "brand_id": "xiaomi",
+    "name": "SU7",
+    "name_en": "SU7",
+    "year": "2026",
+    "type": "中大型纯电轿车",
+    "manufacturer": "小米汽车",
+    "images": [
+      "images/cars/xiaomi/xiaomi-su7-01.jpg"
+    ],
+    "body": {
+      "platform": "752V 高压平台",
+      "length": "4997mm",
+      "width": "1963mm",
+      "height": "1445/1460mm",
+      "wheelbase": "3000mm",
+      "chassis": "蛟龙底盘 · 双叉臂 + 五连杆"
+    },
+    "common_features": [
+      "HyperOS 智能座舱",
+      "骁龙 8 Gen3",
+      "16.1英寸 3K 中控屏",
+      "700TOPS Thor 芯片",
+      "激光雷达",
+      "Xiaomi HAD 智驾",
+      "人车家生态互联"
+    ],
+    "trims": [
+      {
+        "name": "SU7 标准版",
+        "price": "21.99万元",
+        "engine": "单电机后驱",
+        "power": "320马力 / 235kW",
+        "torque": "-",
+        "acceleration": "5.28秒",
+        "battery": "73kWh 磷酸铁锂",
+        "range": "CLTC 720km",
+        "features": [
+          "752V平台",
+          "蛟龙底盘",
+          "双叉臂+五连杆",
+          "HyperOS",
+          "16.1英寸3K中控",
+          "Xiaomi HAD智驾",
+          "激光雷达"
+        ]
+      },
+      {
+        "name": "SU7 Pro",
+        "price": "24.99万元",
+        "engine": "单电机后驱",
+        "power": "320马力 / 235kW",
+        "torque": "-",
+        "acceleration": "5.7秒",
+        "battery": "96.3kWh 磷酸铁锂",
+        "range": "CLTC 902km",
+        "features": [
+          "空气悬架 + CDC",
+          "电动吸合门",
+          "752V平台",
+          "HyperOS",
+          "16.1英寸3K中控",
+          "Xiaomi HAD智驾",
+          "激光雷达"
+        ]
+      },
+      {
+        "name": "SU7 Max",
+        "price": "30.39万元",
+        "engine": "双电机四驱",
+        "power": "690马力 / 508kW",
+        "torque": "-",
+        "acceleration": "3.08秒",
+        "battery": "101.7kWh 三元锂",
+        "range": "CLTC 835km · 12分钟10%-80%",
+        "features": [
+          "Brembo 卡钳",
+          "56英寸AR-HUD",
+          "Nappa真皮座椅",
+          "空气悬架 + CDC",
+          "电动吸合门",
+          "752V平台"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "小米SU7是小米汽车首款量产车型，定位中大型纯电轿车。基于752V高压平台打造，搭载HyperOS智能座舱和Xiaomi HAD智能驾驶系统，以出色的性能和科技生态重新定义智能电动车标杆。"
+  },
+  {
+    "id": "xiaomi-su7-ultra",
+    "brand_id": "xiaomi",
+    "name": "SU7 Ultra",
+    "name_en": "SU7 Ultra",
+    "year": "2025",
+    "type": "赛道级纯电性能轿车",
+    "manufacturer": "小米汽车",
+    "images": [
+      "images/cars/xiaomi/xiaomi-su7-ultra-01.jpg"
+    ],
+    "body": {
+      "platform": "897V 高压平台 · 5.2C 超快充",
+      "drive": "双电机四驱"
+    },
+    "trims": [
+      {
+        "name": "SU7 Ultra",
+        "price": "52.99万元起（预售）",
+        "engine": "双电机四驱",
+        "power": "1138马力",
+        "torque": "-",
+        "acceleration": "1.97秒",
+        "battery": "101.7kWh 三元锂",
+        "range": "897V · 5.2C快充",
+        "features": [
+          "主动尾翼",
+          "碳纤维空气动力学套件",
+          "赛道化底盘调校",
+          "半热熔轮胎",
+          "Brembo高性能刹车",
+          "运动桶椅"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "小米SU7 Ultra是赛道级纯电性能轿车，搭载双电机四驱系统，综合功率高达1138马力，零百加速仅1.97秒。配备主动尾翼、碳纤维套件和赛道化底盘，是小米汽车极致性能的展现。"
+  },
+  {
+    "id": "xiaomi-yu7",
+    "brand_id": "xiaomi",
+    "name": "YU7",
+    "name_en": "YU7",
+    "year": "2026",
+    "type": "中大型纯电SUV",
+    "manufacturer": "小米汽车",
+    "images": [
+      "images/cars/xiaomi/xiaomi-yu7-02.jpg"
+    ],
+    "body": {
+      "length": "约5150mm",
+      "width": "约1990mm",
+      "height": "约1700mm",
+      "wheelbase": "3075mm"
+    },
+    "common_features": [
+      "HyperOS 智能座舱",
+      "骁龙 8 Gen3",
+      "16.1英寸 3K 中控屏",
+      "700TOPS Thor 芯片",
+      "激光雷达",
+      "Xiaomi HAD 智驾"
+    ],
+    "trims": [
+      {
+        "name": "YU7 标准版",
+        "price": "23.35万元",
+        "engine": "单电机后驱",
+        "power": "320马力",
+        "torque": "-",
+        "acceleration": "5.9秒",
+        "battery": "73kWh 磷酸铁锂",
+        "range": "CLTC 643km",
+        "features": [
+          "HyperOS",
+          "激光雷达",
+          "Xiaomi HAD智驾"
+        ]
+      },
+      {
+        "name": "YU7 长续航版",
+        "price": "25.35万元",
+        "engine": "-",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "-",
+        "battery": "-",
+        "range": "-",
+        "features": []
+      },
+      {
+        "name": "YU7 Pro",
+        "price": "27.99万元",
+        "engine": "-",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "-",
+        "battery": "-",
+        "range": "-",
+        "features": []
+      },
+      {
+        "name": "YU7 Max",
+        "price": "32.99万元",
+        "engine": "双电机四驱",
+        "power": "690马力",
+        "torque": "-",
+        "acceleration": "3.23秒",
+        "battery": "-",
+        "range": "CLTC 820km",
+        "features": [
+          "HyperOS",
+          "激光雷达",
+          "Xiaomi HAD智驾"
+        ]
+      },
+      {
+        "name": "YU7 GT",
+        "price": "38.99万元",
+        "engine": "双电机四驱",
+        "power": "1003马力",
+        "torque": "-",
+        "acceleration": "2.92秒 · 极速300km/h",
+        "battery": "101.7kWh 三元锂",
+        "range": "CLTC 705km",
+        "features": [
+          "纽北SUV纪录 7:22.755",
+          "空气悬架",
+          "eLSD电子限滑差速器",
+          "Akebono六活塞碳陶刹车",
+          "赛道化调校"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "小米YU7是小米汽车首款SUV车型，定位中大型纯电SUV。其中YU7 GT以7分22秒755刷新纽博格林北环SUV圈速纪录，展现了惊人的性能实力。全系搭载Xiaomi HAD智能驾驶系统，覆盖从城市到赛道全场景。"
+  },
+  {
+    "id": "tesla-model-3",
+    "brand_id": "tesla",
+    "name": "Model 3",
+    "name_en": "Model 3",
+    "year": "2026",
+    "type": "中型纯电轿车",
+    "manufacturer": "特斯拉上海工厂",
+    "images": [
+      "images/cars/tesla/tesla-model-3-01.png"
+    ],
+    "body": {
+      "length": "4720mm",
+      "width": "1933mm",
+      "height": "1440mm",
+      "wheelbase": "2875mm"
+    },
+    "common_features": [
+      "HW 4.0 硬件",
+      "基础辅助驾驶"
+    ],
+    "trims": [
+      {
+        "name": "后轮驱动版",
+        "price": "23.35万元",
+        "engine": "单电机后驱",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "6.1秒",
+        "battery": "磷酸铁锂",
+        "range": "CLTC 612km",
+        "features": [
+          "HW 4.0",
+          "基础辅助驾驶"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "特斯拉Model 3是中型纯电轿车，上海超级工厂生产。搭载HW 4.0硬件和基础辅助驾驶功能，以出色的能效表现和智能科技成为全球最受欢迎的电动汽车之一。"
+  },
+  {
+    "id": "tesla-model-y",
+    "brand_id": "tesla",
+    "name": "Model Y",
+    "name_en": "Model Y",
+    "year": "2026",
+    "type": "中型纯电SUV",
+    "manufacturer": "特斯拉上海工厂",
+    "images": [
+      "images/cars/tesla/tesla-model-y-01.png"
+    ],
+    "body": {
+      "length": "4750mm",
+      "width": "1921mm",
+      "height": "1624mm",
+      "wheelbase": "2890mm"
+    },
+    "common_features": [
+      "HW 4.0 硬件",
+      "基础辅助驾驶"
+    ],
+    "trims": [
+      {
+        "name": "后轮驱动版",
+        "price": "26.35万元",
+        "engine": "单电机后驱",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "5.9秒",
+        "battery": "磷酸铁锂",
+        "range": "CLTC 593km",
+        "features": [
+          "HW 4.0"
+        ]
+      },
+      {
+        "name": "长续航后驱版",
+        "price": "28.85万元",
+        "engine": "单电机后驱",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "5.6秒",
+        "battery": "三元锂",
+        "range": "CLTC 821km",
+        "features": [
+          "HW 4.0"
+        ]
+      },
+      {
+        "name": "长续航全驱版",
+        "price": "31.35万元",
+        "engine": "双电机四驱",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "4.3秒",
+        "battery": "三元锂",
+        "range": "CLTC 750km",
+        "features": [
+          "HW 4.0"
+        ]
+      },
+      {
+        "name": "Model Y L 长轴六座版",
+        "price": "33.9万元",
+        "engine": "双电机四驱",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "4.5秒",
+        "battery": "-",
+        "range": "CLTC 751km",
+        "features": [
+          "加长150mm轴距",
+          "六座独立座椅"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "特斯拉Model Y是中型纯电SUV，上海超级工厂生产。提供后驱和四驱多种动力选择，其中Model Y L为加长六座版本，满足多人出行需求。"
+  },
+  {
+    "id": "tesla-model-s",
+    "brand_id": "tesla",
+    "name": "Model S",
+    "name_en": "Model S",
+    "year": "2026",
+    "type": "旗舰纯电轿车",
+    "manufacturer": "特斯拉（美国停产）",
+    "images": [
+      "images/cars/tesla/tesla-model-s-01.png"
+    ],
+    "body": {
+      "length": "4970mm",
+      "width": "1964mm",
+      "height": "1445mm",
+      "wheelbase": "2960mm"
+    },
+    "common_features": [],
+    "trims": [
+      {
+        "name": "双电机全驱版",
+        "price": "68.49万元",
+        "engine": "双电机四驱",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "3.2秒",
+        "battery": "-",
+        "range": "-",
+        "features": []
+      },
+      {
+        "name": "Plaid 三电机性能版",
+        "price": "81.49万元",
+        "engine": "三电机四驱",
+        "power": "1020马力",
+        "torque": "-",
+        "acceleration": "2.1秒",
+        "battery": "-",
+        "range": "-",
+        "features": []
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "特斯拉Model S是旗舰纯电轿车，Plaid版搭载三电机四驱系统，1020马力零百加速仅2.1秒。2026年Q2已在国内停售，美国也已停产。"
+  },
+  {
+    "id": "tesla-model-x",
+    "brand_id": "tesla",
+    "name": "Model X",
+    "name_en": "Model X",
+    "year": "2026",
+    "type": "旗舰纯电SUV",
+    "manufacturer": "特斯拉（美国停产）",
+    "images": [
+      "images/cars/tesla/tesla-model-x-01.png"
+    ],
+    "body": {
+      "length": "5057mm",
+      "width": "1999mm",
+      "height": "1680mm",
+      "wheelbase": "2965mm"
+    },
+    "common_features": [
+      "鸥翼门",
+      "空气悬架"
+    ],
+    "trims": [
+      {
+        "name": "双电机全驱版",
+        "price": "72.49万元",
+        "engine": "双电机四驱",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "-",
+        "battery": "-",
+        "range": "-",
+        "features": [
+          "鸥翼门",
+          "空气悬架"
+        ]
+      },
+      {
+        "name": "Plaid 三电机性能版",
+        "price": "82.49万元",
+        "engine": "三电机四驱",
+        "power": "1020马力",
+        "torque": "-",
+        "acceleration": "2.6秒",
+        "battery": "-",
+        "range": "-",
+        "features": [
+          "鸥翼门",
+          "空气悬架",
+          "1020马力"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "特斯拉Model X是旗舰纯电SUV，标志性鸥翼门和空气悬架为标配。Plaid版三电机1020马力零百加速仅2.6秒。2026年Q2已在国内停售，美国也已停产。"
+  },
+  {
+    "id": "tesla-cybertruck",
+    "brand_id": "tesla",
+    "name": "Cybertruck",
+    "name_en": "Cybertruck",
+    "year": "2026",
+    "type": "纯电赛博皮卡",
+    "manufacturer": "特斯拉德州工厂",
+    "images": [
+      "images/cars/tesla/tesla-cybertruck-01.png"
+    ],
+    "body": {
+      "length": "5682mm",
+      "width": "2199mm",
+      "height": "1905mm"
+    },
+    "common_features": [
+      "不锈钢车身",
+      "防弹玻璃"
+    ],
+    "trims": [
+      {
+        "name": "双电机四驱版",
+        "price": "$59,990（海外）",
+        "engine": "双电机四驱",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "4.1秒",
+        "battery": "-",
+        "range": "约547km",
+        "features": [
+          "不锈钢车身",
+          "防弹玻璃"
+        ]
+      },
+      {
+        "name": "三电机 Plaid 版",
+        "price": "$79,990（海外）",
+        "engine": "三电机四驱",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "2.6秒",
+        "battery": "-",
+        "range": "约515km",
+        "features": [
+          "不锈钢车身",
+          "防弹玻璃"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "特斯拉Cybertruck是纯电赛博皮卡，德州工厂生产。采用超硬不锈钢车身和防弹玻璃，极具未来感的设计语言。提供双电机和三电机两种动力选择。"
+  },
+  {
+    "id": "lixiang-l9",
+    "brand_id": "lixiang",
+    "name": "理想 L9",
+    "name_en": "Li L9",
+    "year": "2026",
+    "type": "大型增程SUV",
+    "manufacturer": "理想汽车",
+    "images": [
+      "images/cars/lixiang/lixiang-l9-01.png"
+    ],
+    "body": {
+      "length": "5255mm",
+      "width": "2000mm",
+      "height": "1810mm",
+      "wheelbase": "3125mm",
+      "drive": "双电机四驱 · 420kW"
+    },
+    "common_features": [
+      "增程式双电机四驱",
+      "第三代魔毯空悬",
+      "高通骁龙8797",
+      "29英寸6K超宽全景屏",
+      "四零重力座椅",
+      "激光雷达"
+    ],
+    "trims": [
+      {
+        "name": "Ultra",
+        "price": "45.98万元",
+        "engine": "双电机四驱",
+        "power": "420kW",
+        "torque": "-",
+        "acceleration": "4.9秒",
+        "battery": "72.7kWh 5C超充",
+        "range": "CLTC纯电420km · 综合1650km",
+        "features": [
+          "单颗马赫M100 1280TOPS",
+          "4颗激光雷达",
+          "四零重力座椅",
+          "29英寸6K全景屏",
+          "5440W音响"
+        ]
+      },
+      {
+        "name": "Livis",
+        "price": "50.98万元",
+        "engine": "双电机四驱",
+        "power": "420kW",
+        "torque": "-",
+        "acceleration": "4.9秒",
+        "battery": "72.7kWh 5C超充",
+        "range": "CLTC纯电420km · 综合1650km",
+        "features": [
+          "双颗马赫M100 2560TOPS",
+          "800V主动悬架",
+          "线控转向+后轮转向",
+          "四零重力座椅",
+          "29英寸6K全景屏"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "全新一代理想L9是旗舰大型增程式SUV，搭载第三代自研增程系统和72.7kWh 5C超充电池，纯电续航420km，综合续航1650km。配备四零重力座椅、29英寸6K全景屏和最高2560TOPS智驾算力，以具身智能重新定义旗舰SUV。"
+  },
+  {
+    "id": "lixiang-l8",
+    "brand_id": "lixiang",
+    "name": "理想 L8",
+    "name_en": "Li L8",
+    "year": "2025",
+    "type": "中大型增程SUV",
+    "manufacturer": "理想汽车",
+    "images": [
+      "images/cars/lixiang/lixiang-l8-01.png"
+    ],
+    "body": {
+      "length": "5080mm",
+      "width": "1995mm",
+      "height": "1800mm",
+      "wheelbase": "3005mm"
+    },
+    "common_features": [
+      "增程式双电机四驱",
+      "双腔空气悬架",
+      "魔毯悬架",
+      "高通骁龙8295P",
+      "Nappa真皮座椅",
+      "全车电吸门"
+    ],
+    "trims": [
+      {
+        "name": "Pro 智能焕新版",
+        "price": "32.18万元",
+        "engine": "双电机四驱",
+        "power": "449马力 / 330kW",
+        "torque": "620N·m",
+        "acceleration": "5.3秒",
+        "battery": "42.8kWh",
+        "range": "CLTC纯电225km · 综合1360km",
+        "features": [
+          "地平线征程6M芯片",
+          "高速NOA",
+          "双腔空悬",
+          "19扬声器全景声",
+          "六座布局"
+        ]
+      },
+      {
+        "name": "Max 智能焕新版",
+        "price": "34.98万元",
+        "engine": "双电机四驱",
+        "power": "449马力 / 330kW",
+        "torque": "620N·m",
+        "acceleration": "5.3秒",
+        "battery": "52.3kWh",
+        "range": "CLTC纯电280km · 综合1415km",
+        "features": [
+          "英伟达Thor-U 700TOPS",
+          "城市+高速NOA",
+          "激光雷达",
+          "车载冰箱"
+        ]
+      },
+      {
+        "name": "Ultra 智能焕新版",
+        "price": "37.98万元",
+        "engine": "双电机四驱",
+        "power": "449马力 / 330kW",
+        "torque": "620N·m",
+        "acceleration": "5.3秒",
+        "battery": "52.3kWh",
+        "range": "CLTC纯电280km · 综合1415km",
+        "features": [
+          "英伟达Thor-U 700TOPS",
+          "后排15.7英寸娱乐屏",
+          "激光雷达",
+          "车载冰箱"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "理想L8是中大型六座增程式SUV，2+2+2座椅布局，双腔空气悬架全系标配。Pro版纯电续航225km，Max/Ultra版达280km。以六座大空间和舒适配置满足多孩家庭出行需求。"
+  },
+  {
+    "id": "lixiang-l7",
+    "brand_id": "lixiang",
+    "name": "理想 L7",
+    "name_en": "Li L7",
+    "year": "2025",
+    "type": "中大型增程SUV",
+    "manufacturer": "理想汽车",
+    "images": [
+      "images/cars/lixiang/lixiang-l7-01.png"
+    ],
+    "body": {
+      "length": "5050mm",
+      "width": "1995mm",
+      "height": "1750mm",
+      "wheelbase": "3005mm"
+    },
+    "common_features": [
+      "增程式双电机四驱",
+      "魔毯空气悬架",
+      "高通骁龙8295P",
+      "15.7英寸OLED双屏",
+      "Nappa真皮座椅",
+      "HUD抬头显示"
+    ],
+    "trims": [
+      {
+        "name": "Pro 智能焕新版",
+        "price": "30.18万元",
+        "engine": "双电机四驱",
+        "power": "449马力 / 330kW",
+        "torque": "620N·m",
+        "acceleration": "5.3秒",
+        "battery": "42.8kWh",
+        "range": "CLTC纯电225km · 综合1360km",
+        "features": [
+          "地平线征程6M芯片",
+          "高速NOA",
+          "魔毯空气悬架",
+          "19扬声器"
+        ]
+      },
+      {
+        "name": "Max 智能焕新版",
+        "price": "32.98万元",
+        "engine": "双电机四驱",
+        "power": "449马力 / 330kW",
+        "torque": "620N·m",
+        "acceleration": "5.3秒",
+        "battery": "52.3kWh",
+        "range": "CLTC纯电286km · 综合1421km",
+        "features": [
+          "英伟达Thor-U 700TOPS",
+          "城市+高速NOA",
+          "激光雷达",
+          "车载冰箱"
+        ]
+      },
+      {
+        "name": "Ultra 智能焕新版",
+        "price": "35.98万元",
+        "engine": "双电机四驱",
+        "power": "449马力 / 330kW",
+        "torque": "620N·m",
+        "acceleration": "5.3秒",
+        "battery": "52.3kWh",
+        "range": "CLTC纯电286km · 综合1421km",
+        "features": [
+          "英伟达Thor-U 700TOPS",
+          "后排15.7英寸娱乐屏",
+          "激光雷达",
+          "车载冰箱"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "理想L7是中大型五座增程式SUV，搭载1.5T增程器和双电机四驱系统。Max和Ultra版纯电续航达286km，综合续航超1400km。标配魔毯空气悬架，以极致舒适定义家庭出行新标准。"
+  },
+  {
+    "id": "lixiang-l6",
+    "brand_id": "lixiang",
+    "name": "理想 L6",
+    "name_en": "Li L6",
+    "year": "2025",
+    "type": "中大型增程SUV",
+    "manufacturer": "理想汽车",
+    "images": [
+      "images/cars/lixiang/lixiang-l6-01.png"
+    ],
+    "body": {
+      "length": "4925mm",
+      "width": "1960mm",
+      "height": "1735mm",
+      "wheelbase": "2920mm"
+    },
+    "common_features": [
+      "增程式双电机四驱",
+      "ATL全天候激光雷达",
+      "高通骁龙8295P",
+      "15.7英寸OLED双屏",
+      "HUD抬头显示"
+    ],
+    "trims": [
+      {
+        "name": "Pro 智能焕新版",
+        "price": "24.98万元",
+        "engine": "双电机四驱",
+        "power": "300kW",
+        "torque": "-",
+        "acceleration": "5.4秒",
+        "battery": "磷酸铁锂",
+        "range": "CLTC纯电212km · 综合1390km",
+        "features": [
+          "高速NOA",
+          "座椅加热通风按摩",
+          "电动尾门",
+          "对外放电3.5kW"
+        ]
+      },
+      {
+        "name": "Max 智能焕新版",
+        "price": "27.98万元",
+        "engine": "双电机四驱",
+        "power": "300kW",
+        "torque": "-",
+        "acceleration": "5.4秒",
+        "battery": "磷酸铁锂",
+        "range": "CLTC纯电212km · 综合1390km",
+        "features": [
+          "城市+高速NOA",
+          "激光雷达",
+          "座椅加热通风按摩",
+          "电动尾门"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "理想L6是中大型增程式SUV，搭载增程式双电机四驱系统，纯电续航212km，综合续航1390km。全系标配ATL激光雷达和高通骁龙8295P座舱芯片，以亲民价格提供豪华智能体验。"
+  },
+  {
+    "id": "lixiang-mega",
+    "brand_id": "lixiang",
+    "name": "理想 MEGA",
+    "name_en": "Li MEGA",
+    "year": "2025",
+    "type": "大型纯电MPV",
+    "manufacturer": "理想汽车",
+    "images": [
+      "images/cars/lixiang/lixiang-mega-01.png"
+    ],
+    "body": {
+      "length": "5350mm",
+      "width": "1965mm",
+      "height": "1850mm",
+      "wheelbase": "3300mm",
+      "platform": "800V 高压平台"
+    },
+    "common_features": [
+      "800V高压平台",
+      "双电机四驱",
+      "智能双腔空气悬架+CDC",
+      "理想AD Max",
+      "双侧电动侧滑门",
+      "高通骁龙8295P"
+    ],
+    "trims": [
+      {
+        "name": "Ultra 智能焕新版",
+        "price": "52.98万元",
+        "engine": "双电机四驱",
+        "power": "544马力 / 400kW",
+        "torque": "542N·m",
+        "acceleration": "5.5秒",
+        "battery": "102.7kWh 三元锂",
+        "range": "CLTC 710km · 12分钟补能500km",
+        "features": [
+          "理想AD Max",
+          "21扬声器全景声",
+          "冰箱",
+          "零重力座椅",
+          "双侧电滑门"
+        ]
+      },
+      {
+        "name": "Home 家庭特别版",
+        "price": "55.98万元",
+        "engine": "双电机四驱",
+        "power": "544马力 / 400kW",
+        "torque": "542N·m",
+        "acceleration": "5.5秒",
+        "battery": "102.7kWh 三元锂",
+        "range": "CLTC 710km · 12分钟补能500km",
+        "features": [
+          "二排旋转座椅",
+          "前排电吸门",
+          "6个Type-C接口",
+          "理想AD Max",
+          "21扬声器全景声",
+          "冰箱"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "理想MEGA是大型纯电MPV，风阻系数仅Cd 0.215，形似高铁。搭载800V高压平台和102.7kWh电池，CLTC续航710km，520kW超充12分钟补能500km。以极致空间和舒适配置打造家庭出行移动空间。"
+  },
+  {
+    "id": "lixiang-one",
+    "brand_id": "lixiang",
+    "name": "理想 ONE",
+    "name_en": "Li ONE",
+    "year": "2021",
+    "type": "中大型增程SUV",
+    "manufacturer": "理想汽车",
+    "images": [
+      "images/cars/lixiang/lixiang-one-01.png"
+    ],
+    "body": {
+      "length": "5030mm",
+      "width": "1960mm",
+      "height": "1760mm",
+      "wheelbase": "2935mm"
+    },
+    "common_features": [
+      "增程式双电机四驱",
+      "NOA导航辅助",
+      "四屏交互",
+      "6座布局"
+    ],
+    "trims": [
+      {
+        "name": "2021款",
+        "price": "33.8万元",
+        "engine": "双电机四驱",
+        "power": "333马力 / 245kW",
+        "torque": "455N·m",
+        "acceleration": "6.5秒",
+        "battery": "40.5kWh 三元锂",
+        "range": "NEDC纯电188km · 综合1080km",
+        "features": [
+          "NOA导航辅助",
+          "四屏交互",
+          "6座布局",
+          "对外放电"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "理想ONE是理想汽车首款量产车型，定位中大型增程式SUV。2021款搭载40.5kWh电池和55L大油箱，NEDC综合续航达1080km。作为增程式技术的先行者，为理想汽车奠定了市场基础。"
+  },
+  {
+    "id": "lixiang-i9",
+    "brand_id": "lixiang",
+    "name": "理想 i9",
+    "name_en": "Li i9",
+    "year": "2026",
+    "type": "全尺寸纯电旗舰SUV",
+    "manufacturer": "理想汽车",
+    "images": [
+      "images/cars/lixiang/lixiang-i9-01.png"
+    ],
+    "body": {
+      "length": "约5300mm",
+      "width": "-",
+      "height": "-",
+      "wheelbase": "约3100mm",
+      "platform": "800V 高压平台"
+    },
+    "common_features": [
+      "800V高压平台",
+      "5C超充",
+      "理想AD Max 3.0",
+      "4颗激光雷达",
+      "全主动空气悬架",
+      "后轮转向"
+    ],
+    "trims": [
+      {
+        "name": "双电机四驱版",
+        "price": "约50万元（待发布）",
+        "engine": "双电机四驱",
+        "power": "约500kW",
+        "torque": "-",
+        "acceleration": "4秒级",
+        "battery": "5C超充",
+        "range": "CLTC 超800km",
+        "features": [
+          "L3级智驾",
+          "4颗激光雷达",
+          "后轮转向",
+          "全主动空悬",
+          "五屏联动"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "理想i9是全尺寸纯电旗舰SUV，基于800V高压平台打造，搭载5C超充和双电机四驱系统。配备4颗激光雷达和双马赫100芯片，支持L3级智驾。2026年下半年正式发布，是理想纯电家族的旗舰之作。"
+  },
+  {
+    "id": "lixiang-i8",
+    "brand_id": "lixiang",
+    "name": "理想 i8",
+    "name_en": "Li i8",
+    "year": "2025",
+    "type": "中大型纯电SUV",
+    "manufacturer": "理想汽车",
+    "images": [
+      "images/cars/lixiang/lixiang-i8-01.png"
+    ],
+    "body": {
+      "length": "5085mm",
+      "width": "1960mm",
+      "height": "1740mm",
+      "wheelbase": "3050mm",
+      "platform": "800V 高压平台"
+    },
+    "common_features": [
+      "800V高压平台",
+      "5C超充",
+      "理想AD Max",
+      "双腔魔毯空气悬架",
+      "高通骁龙8295P",
+      "激光雷达"
+    ],
+    "trims": [
+      {
+        "name": "Pro",
+        "price": "32.18万元",
+        "engine": "双电机四驱",
+        "power": "544马力 / 400kW",
+        "torque": "660N·m",
+        "acceleration": "4.5秒",
+        "battery": "97.8kWh 三元锂",
+        "range": "CLTC 720km · 10分钟补能500km",
+        "features": [
+          "双电机四驱",
+          "双腔空悬+CDC",
+          "AD Max",
+          "6座布局",
+          "20扬声器"
+        ]
+      },
+      {
+        "name": "Max",
+        "price": "33.98万元",
+        "engine": "双电机四驱",
+        "power": "544马力 / 400kW",
+        "torque": "660N·m",
+        "acceleration": "4.5秒",
+        "battery": "97.8kWh 三元锂",
+        "range": "CLTC 720km · 10分钟补能500km",
+        "features": [
+          "铂金音响",
+          "双腔空悬+CDC",
+          "AD Max",
+          "激光雷达",
+          "车载冰箱"
+        ]
+      },
+      {
+        "name": "Ultra",
+        "price": "36.98万元",
+        "engine": "双电机四驱",
+        "power": "544马力 / 400kW",
+        "torque": "660N·m",
+        "acceleration": "4.5秒",
+        "battery": "97.8kWh 三元锂",
+        "range": "CLTC 720km · 10分钟补能500km",
+        "features": [
+          "铂金音响",
+          "双腔空悬+CDC",
+          "零重力座椅",
+          "后排娱乐屏",
+          "AD Max"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "理想i8是中大型六座纯电SUV，基于800V高压平台打造，全系双电机四驱，CLTC续航720km，零百加速4.5秒。标配双腔魔毯空气悬架和AD Max智驾，以纯电六座布局满足家庭高端出行需求。"
+  },
+  {
+    "id": "lixiang-i6",
+    "brand_id": "lixiang",
+    "name": "理想 i6",
+    "name_en": "Li i6",
+    "year": "2025",
+    "type": "中大型纯电SUV",
+    "manufacturer": "理想汽车",
+    "images": [
+      "images/cars/lixiang/lixiang-i6-01.png"
+    ],
+    "body": {
+      "length": "4950mm",
+      "width": "1935mm",
+      "height": "1655mm",
+      "wheelbase": "3000mm",
+      "platform": "800V 高压平台"
+    },
+    "common_features": [
+      "800V高压平台",
+      "5C超充",
+      "理想AD Max",
+      "ATL激光雷达",
+      "高通骁龙8295P",
+      "CDC减振器"
+    ],
+    "trims": [
+      {
+        "name": "两驱标准版",
+        "price": "24.98万元",
+        "engine": "单电机后驱",
+        "power": "250kW",
+        "torque": "-",
+        "acceleration": "6.5秒",
+        "battery": "87.3kWh 磷酸铁锂 5C",
+        "range": "CLTC 720km · 10分钟补能500km",
+        "features": [
+          "后驱",
+          "CDC减振器",
+          "AD Max",
+          "Nappa真皮座椅",
+          "15.7英寸双联屏"
+        ]
+      },
+      {
+        "name": "四驱标准版",
+        "price": "26.98万元",
+        "engine": "双电机四驱",
+        "power": "400kW",
+        "torque": "660N·m",
+        "acceleration": "4.5秒",
+        "battery": "87.3kWh 磷酸铁锂 5C",
+        "range": "CLTC 660km · 10分钟补能500km",
+        "features": [
+          "双电机四驱",
+          "CDC减振器",
+          "AD Max",
+          "Nappa真皮座椅",
+          "15.7英寸双联屏"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "理想i6是中大型纯电SUV，基于800V高压平台打造，搭载87.3kWh 5C磷酸铁锂电池，两驱版CLTC续航720km，四驱版零百加速4.5秒。全系标配AD Max智驾和激光雷达，以纯电技术进军主流SUV市场。"
+  },
+  {
+    "id": "byd-han",
+    "brand_id": "byd",
+    "name": "汉",
+    "name_en": "Han",
+    "year": "2026",
+    "type": "中大型轿车",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-han-01.png"
+    ],
+    "body": {
+      "length": "4995mm",
+      "width": "1910mm",
+      "height": "1495mm",
+      "wheelbase": "2920mm"
+    },
+    "common_features": [
+      "刀片电池",
+      "DiPilot 智驾",
+      "15.6英寸旋转屏",
+      "云辇-C",
+      "丹拿音响"
+    ],
+    "trims": [
+      {
+        "name": "DM-i 125km 尊贵型",
+        "price": "16.88万元",
+        "engine": "1.5T插电混动",
+        "power": "272马力",
+        "torque": "-",
+        "acceleration": "6.9秒",
+        "battery": "磷酸铁锂刀片电池",
+        "range": "CLTC纯电125km · 综合1300km",
+        "features": [
+          "DM-i超级混动",
+          "DiPilot",
+          "15.6英寸旋转屏"
+        ]
+      },
+      {
+        "name": "DM-p 215km 四驱旗舰型",
+        "price": "24.98万元",
+        "engine": "1.5T插电混动四驱",
+        "power": "516马力",
+        "torque": "-",
+        "acceleration": "3.7秒",
+        "battery": "磷酸铁锂刀片电池",
+        "range": "CLTC纯电215km · 综合1400km",
+        "features": [
+          "DM-p高性能四驱",
+          "激光雷达",
+          "云辇-C",
+          "丹拿音响"
+        ]
+      },
+      {
+        "name": "EV 705km 旗舰型",
+        "price": "21.58万元",
+        "engine": "纯电",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "-",
+        "battery": "磷酸铁锂刀片电池",
+        "range": "CLTC 705km · 800V闪充",
+        "features": [
+          "800V高压平台",
+          "闪充技术",
+          "云辇-C",
+          "丹拿音响"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪汉是王朝系列旗舰轿车，在售款提供DM-i、DM-p和EV三种动力。搭载第五代DM技术或800V闪充平台，以刀片电池和云辇-C智能底盘树立中国品牌轿车新标杆。"
+  },
+  {
+    "id": "byd-tang",
+    "brand_id": "byd",
+    "name": "唐",
+    "name_en": "Tang",
+    "year": "2025",
+    "type": "中型SUV",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-tang-01.png"
+    ],
+    "body": {
+      "length": "4970mm",
+      "width": "1940mm",
+      "height": "1720mm",
+      "wheelbase": "2820mm"
+    },
+    "common_features": [
+      "刀片电池",
+      "DiPilot 100",
+      "15.6英寸旋转屏",
+      "云辇-C",
+      "7座",
+      "DiLink 100"
+    ],
+    "trims": [
+      {
+        "name": "DM-i 115km 尊贵型",
+        "price": "17.98万元",
+        "engine": "1.5T插电混动",
+        "power": "272马力 / 200kW",
+        "torque": "-",
+        "acceleration": "8.5秒",
+        "battery": "磷酸铁锂刀片电池",
+        "range": "CLTC纯电115km · 综合1200km",
+        "features": [
+          "第五代DM技术",
+          "DiPilot 100",
+          "15.6英寸旋转屏",
+          "云辇-C",
+          "7座"
+        ]
+      },
+      {
+        "name": "DM-p 215km 四驱旗舰型",
+        "price": "24.98万元",
+        "engine": "1.5T插电混动四驱",
+        "power": "516马力",
+        "torque": "-",
+        "acceleration": "4.3秒",
+        "battery": "磷酸铁锂刀片电池",
+        "range": "CLTC纯电215km · 综合1200km",
+        "features": [
+          "DM-p高性能四驱",
+          "DiPilot 100",
+          "激光雷达",
+          "云辇-C",
+          "丹拿音响"
+        ]
+      },
+      {
+        "name": "EV 730km 旗舰型",
+        "price": "23.98万元",
+        "engine": "纯电",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "-",
+        "battery": "刀片电池",
+        "range": "CLTC 730km",
+        "features": [
+          "800V高压平台",
+          "闪充技术",
+          "DiPilot 100",
+          "云辇-C",
+          "丹拿音响"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪唐是王朝网中型7座SUV，在售款提供DM-i、DM-p和EV三种动力。搭载第五代DM技术或800V闪充平台，以云辇-C智能底盘和灵活大空间满足家庭出行需求。"
+  },
+  {
+    "id": "byd-qin-l",
+    "brand_id": "byd",
+    "name": "秦L",
+    "name_en": "Qin L",
+    "year": "2025",
+    "type": "中型轿车",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-qin-l-01.png"
+    ],
+    "body": {
+      "length": "4830mm",
+      "width": "1900mm",
+      "height": "1495mm",
+      "wheelbase": "2790mm"
+    },
+    "common_features": [
+      "第五代DM技术",
+      "DiPilot 100",
+      "DiLink 100",
+      "12.8英寸中控屏",
+      "8.8英寸仪表",
+      "360°全景影像"
+    ],
+    "trims": [
+      {
+        "name": "DM-i 80km 领先型",
+        "price": "9.98万元",
+        "engine": "1.5L插电混动",
+        "power": "163马力 / 120kW",
+        "torque": "210N·m",
+        "acceleration": "7.9秒",
+        "battery": "10.08kWh 刀片电池",
+        "range": "CLTC纯电80km · 综合1200km",
+        "features": [
+          "第五代DM技术",
+          "DiPilot 100",
+          "12.8英寸中控屏"
+        ]
+      },
+      {
+        "name": "DM-i 120km 卓越型",
+        "price": "13.98万元",
+        "engine": "1.5L插电混动",
+        "power": "218马力 / 160kW",
+        "torque": "260N·m",
+        "acceleration": "7.5秒",
+        "battery": "15.87kWh 刀片电池",
+        "range": "CLTC纯电120km · 综合1200km",
+        "features": [
+          "第五代DM技术",
+          "DiPilot 100",
+          "15.6英寸中控屏",
+          "全景天窗",
+          "座椅加热通风"
+        ]
+      },
+      {
+        "name": "EV 545km 卓越型",
+        "price": "13.98万元",
+        "engine": "单电机后驱",
+        "power": "218马力 / 160kW",
+        "torque": "330N·m",
+        "acceleration": "-",
+        "battery": "刀片电池",
+        "range": "CLTC 545km",
+        "features": [
+          "e平台3.0 Evo",
+          "后置后驱",
+          "DiPilot 100",
+          "15.6英寸中控屏"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪秦L是王朝网中型轿车，定位介于秦PLUS与汉之间。搭载第五代DM插混技术或纯电动力，亏电油耗低至2.9L/100km，全系标配DiPilot 100智驾系统。"
+  },
+  {
+    "id": "byd-qin-plus",
+    "brand_id": "byd",
+    "name": "秦PLUS",
+    "name_en": "Qin PLUS",
+    "year": "2024",
+    "type": "紧凑型轿车（已停产）",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-qin-plus-01.png"
+    ],
+    "body": {
+      "length": "4765mm",
+      "width": "1837mm",
+      "height": "1495mm",
+      "wheelbase": "2718mm"
+    },
+    "common_features": [
+      "第五代DM技术",
+      "刀片电池",
+      "12.8英寸旋转屏",
+      "DiLink智能网联"
+    ],
+    "trims": [
+      {
+        "name": "DM-i 55km 领先型",
+        "price": "7.98万元",
+        "engine": "1.5L插电混动",
+        "power": "163马力 / 120kW",
+        "torque": "210N·m",
+        "acceleration": "7.9秒",
+        "battery": "磷酸铁锂刀片电池",
+        "range": "CLTC纯电55km · 综合1200km",
+        "features": [
+          "第五代DM技术",
+          "12.8英寸旋转屏",
+          "DiLink"
+        ]
+      },
+      {
+        "name": "DM-i 120km 卓越型",
+        "price": "10.98万元",
+        "engine": "1.5L插电混动",
+        "power": "197马力 / 145kW",
+        "torque": "325N·m",
+        "acceleration": "7.3秒",
+        "battery": "磷酸铁锂刀片电池",
+        "range": "CLTC纯电120km · 综合1200km",
+        "features": [
+          "第五代DM技术",
+          "12.8英寸旋转屏",
+          "DiLink",
+          "VTOL外放电"
+        ]
+      },
+      {
+        "name": "EV 510km 领先型",
+        "price": "9.98万元",
+        "engine": "单电机前驱",
+        "power": "136马力 / 100kW",
+        "torque": "180N·m",
+        "acceleration": "-",
+        "battery": "刀片电池",
+        "range": "CLTC 510km",
+        "features": [
+          "e平台3.0",
+          "刀片电池",
+          "12.8英寸旋转屏"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪秦PLUS是王朝网紧凑型轿车，曾长期蝉联中国轿车销量冠军，目前已停产。提供DM-i插混和EV纯电两种动力，以超高性价比和低油耗著称。"
+  },
+  {
+    "id": "byd-song-pro",
+    "brand_id": "byd",
+    "name": "宋Pro",
+    "name_en": "Song Pro",
+    "year": "2025",
+    "type": "紧凑型SUV",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-song-pro-01.png"
+    ],
+    "body": {
+      "length": "4735mm",
+      "width": "1860mm",
+      "height": "1710mm",
+      "wheelbase": "2712mm"
+    },
+    "common_features": [
+      "第五代DM技术",
+      "DiPilot 100",
+      "DiLink 100",
+      "12.8英寸中控屏",
+      "360°全景影像"
+    ],
+    "trims": [
+      {
+        "name": "DM-i 75km 领先型",
+        "price": "10.28万元",
+        "engine": "1.5L插电混动",
+        "power": "163马力 / 120kW",
+        "torque": "210N·m",
+        "acceleration": "8.3秒",
+        "battery": "12.9kWh 刀片电池",
+        "range": "CLTC纯电75km · 综合1100km",
+        "features": [
+          "第五代DM技术",
+          "DiPilot 100",
+          "12.8英寸中控屏",
+          "全景天窗"
+        ]
+      },
+      {
+        "name": "DM-i 115km 卓越型",
+        "price": "13.28万元",
+        "engine": "1.5L插电混动",
+        "power": "163马力 / 120kW",
+        "torque": "210N·m",
+        "acceleration": "8.5秒",
+        "battery": "18.3kWh 刀片电池",
+        "range": "CLTC纯电115km · 综合1100km",
+        "features": [
+          "第五代DM技术",
+          "DiPilot 100",
+          "15.6英寸中控屏",
+          "座椅加热通风",
+          "电动尾门"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪宋Pro是王朝网紧凑型SUV，采用第五代DM插混技术，全系标配DiPilot 100智驾系统。亏电油耗仅4.9L/100km，以高性价比成为紧凑型SUV市场热门之选。"
+  },
+  {
+    "id": "byd-song-l",
+    "brand_id": "byd",
+    "name": "宋L",
+    "name_en": "Song L",
+    "year": "2025",
+    "type": "中型SUV",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-song-l-01.png"
+    ],
+    "body": {
+      "length": "4840mm",
+      "width": "1950mm",
+      "height": "1560mm",
+      "wheelbase": "2930mm"
+    },
+    "common_features": [
+      "第五代DM技术",
+      "云辇-C",
+      "DiPilot 100",
+      "15.6英寸中控屏",
+      "10.25英寸仪表",
+      "360°全景影像"
+    ],
+    "trims": [
+      {
+        "name": "DM-i 112km 领先型",
+        "price": "14.98万元",
+        "engine": "1.5L插电混动",
+        "power": "163马力 / 120kW",
+        "torque": "-",
+        "acceleration": "8.5秒",
+        "battery": "刀片电池",
+        "range": "CLTC纯电112km · 综合1200km",
+        "features": [
+          "第五代DM技术",
+          "DiPilot 100",
+          "15.6英寸中控屏",
+          "云辇-C"
+        ]
+      },
+      {
+        "name": "DM-i 160km 卓越型",
+        "price": "17.98万元",
+        "engine": "1.5L插电混动",
+        "power": "163马力 / 120kW",
+        "torque": "-",
+        "acceleration": "8.5秒",
+        "battery": "刀片电池",
+        "range": "CLTC纯电160km · 综合1200km",
+        "features": [
+          "第五代DM技术",
+          "DiPilot 100",
+          "15.6英寸中控屏",
+          "云辇-C",
+          "丹拿音响",
+          "HUD"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪宋L是王朝网中型SUV，采用龙颜美学设计，搭载第五代DM插混技术。全系标配云辇-C智能车身控制和DiPilot 100智驾系统，以高颜值和丰富配置赢得年轻家庭青睐。"
+  },
+  {
+    "id": "byd-song-plus",
+    "brand_id": "byd",
+    "name": "宋PLUS",
+    "name_en": "Song PLUS",
+    "year": "2025",
+    "type": "紧凑型SUV（已停产）",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-song-plus-01.png"
+    ],
+    "body": {
+      "length": "4775mm",
+      "width": "1890mm",
+      "height": "1670mm",
+      "wheelbase": "2765mm"
+    },
+    "common_features": [
+      "第五代DM技术",
+      "刀片电池",
+      "12.8英寸旋转屏",
+      "DiLink",
+      "VTOL外放电"
+    ],
+    "trims": [
+      {
+        "name": "DM-i 110km 旗舰型",
+        "price": "13.98万元",
+        "engine": "1.5L插电混动",
+        "power": "197马力 / 145kW",
+        "torque": "325N·m",
+        "acceleration": "7.9秒",
+        "battery": "磷酸铁锂刀片电池",
+        "range": "CLTC纯电110km · 综合1200km",
+        "features": [
+          "第五代DM技术",
+          "12.8英寸旋转屏",
+          "DiLink",
+          "全景天窗"
+        ]
+      },
+      {
+        "name": "EV 520km 旗舰型",
+        "price": "15.98万元",
+        "engine": "单电机前驱",
+        "power": "218马力 / 160kW",
+        "torque": "310N·m",
+        "acceleration": "-",
+        "battery": "刀片电池",
+        "range": "CLTC 520km",
+        "features": [
+          "e平台3.0",
+          "刀片电池",
+          "12.8英寸旋转屏",
+          "DiLink"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪宋PLUS曾是最畅销的新能源SUV之一，提供DM-i插混和EV纯电两种动力。该车型已于2026年1月正式停产移除，由宋L等新车型接替其市场地位。"
+  },
+  {
+    "id": "byd-yuan-up",
+    "brand_id": "byd",
+    "name": "元UP",
+    "name_en": "Yuan UP",
+    "year": "2025",
+    "type": "小型纯电SUV",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-yuan-up-01.png"
+    ],
+    "body": {
+      "length": "4310mm",
+      "width": "1830mm",
+      "height": "1675mm",
+      "wheelbase": "2620mm"
+    },
+    "common_features": [
+      "e平台3.0",
+      "刀片电池",
+      "8.8英寸仪表",
+      "VTOL外放电",
+      "热泵空调"
+    ],
+    "trims": [
+      {
+        "name": "301km 领航型",
+        "price": "7.48万元",
+        "engine": "单电机",
+        "power": "95马力 / 70kW",
+        "torque": "180N·m",
+        "acceleration": "12.9秒",
+        "battery": "32kWh 刀片电池",
+        "range": "CLTC 301km",
+        "features": [
+          "e平台3.0",
+          "刀片电池",
+          "10.1英寸中控屏",
+          "VTOL外放电"
+        ]
+      },
+      {
+        "name": "401km 智驾版超越型",
+        "price": "11.98万元",
+        "engine": "单电机",
+        "power": "177马力 / 130kW",
+        "torque": "290N·m",
+        "acceleration": "7.9秒",
+        "battery": "45.12kWh 刀片电池",
+        "range": "CLTC 401km",
+        "features": [
+          "DiPilot 100",
+          "12.8英寸中控屏",
+          "360°全景影像",
+          "座椅通风加热",
+          "全景天幕"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪元UP是王朝网小型纯电SUV，基于e平台3.0打造，入门版仅7.48万元。高配续航401km并搭载DiPilot 100智驾系统，以亲民价格成为年轻用户首选。"
+  },
+  {
+    "id": "byd-xia",
+    "brand_id": "byd",
+    "name": "夏",
+    "name_en": "Xia",
+    "year": "2026",
+    "type": "中大型MPV",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-xia-01.png"
+    ],
+    "body": {
+      "length": "5145mm",
+      "width": "1970mm",
+      "height": "1805mm",
+      "wheelbase": "3045mm"
+    },
+    "common_features": [
+      "第五代DM技术",
+      "云辇-C",
+      "DiLink 150座舱",
+      "15.6英寸中控屏",
+      "双侧电滑门"
+    ],
+    "trims": [
+      {
+        "name": "100km 进取型",
+        "price": "20.68万元",
+        "engine": "1.5T插电混动",
+        "power": "272马力 / 200kW",
+        "torque": "-",
+        "acceleration": "8.1秒",
+        "battery": "20.39kWh 刀片电池",
+        "range": "CLTC纯电100km · 综合1163km",
+        "features": [
+          "第五代DM技术",
+          "云辇-C",
+          "7座",
+          "双侧电滑门",
+          "15.6英寸中控屏"
+        ]
+      },
+      {
+        "name": "218km 卓越型",
+        "price": "26.98万元",
+        "engine": "1.5T插电混动",
+        "power": "272马力 / 200kW",
+        "torque": "-",
+        "acceleration": "8.1秒",
+        "battery": "36.6kWh 刀片电池",
+        "range": "CLTC纯电218km · 综合1163km",
+        "features": [
+          "天神之眼B",
+          "激光雷达",
+          "城市NOA",
+          "云辇-C",
+          "后排娱乐屏",
+          "冰箱"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪夏是王朝网中大型MPV，搭载第五代DM插混技术，纯电续航最高218km。2+2+3七座布局、双侧电滑门和云辇-C全系标配，顶配配备天神之眼B智驾。"
+  },
+  {
+    "id": "byd-seagull",
+    "brand_id": "byd",
+    "name": "海鸥",
+    "name_en": "Seagull",
+    "year": "2025",
+    "type": "微型纯电轿车",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-seagull-01.png"
+    ],
+    "body": {
+      "length": "3780mm",
+      "width": "1715mm",
+      "height": "1540mm",
+      "wheelbase": "2500mm"
+    },
+    "common_features": [
+      "e平台3.0",
+      "刀片电池",
+      "10.1英寸中控屏",
+      "7英寸仪表",
+      "VTOL外放电"
+    ],
+    "trims": [
+      {
+        "name": "305km 活力型",
+        "price": "6.98万元",
+        "engine": "单电机",
+        "power": "75马力 / 55kW",
+        "torque": "135N·m",
+        "acceleration": "-",
+        "battery": "磷酸铁锂刀片电池",
+        "range": "CLTC 305km",
+        "features": [
+          "e平台3.0",
+          "刀片电池",
+          "10.1英寸中控屏"
+        ]
+      },
+      {
+        "name": "405km 自由型",
+        "price": "8.58万元",
+        "engine": "单电机",
+        "power": "75马力 / 55kW",
+        "torque": "135N·m",
+        "acceleration": "-",
+        "battery": "磷酸铁锂刀片电池",
+        "range": "CLTC 405km",
+        "features": [
+          "e平台3.0",
+          "刀片电池",
+          "10.1英寸中控屏",
+          "VTOL外放电",
+          "快充"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪海鸥是海洋网入门级微型纯电轿车，基于e平台3.0打造。以6.98万元的起售价和最高405km的续航，成为国内最畅销的纯电微型车之一。"
+  },
+  {
+    "id": "byd-dolphin",
+    "brand_id": "byd",
+    "name": "海豚",
+    "name_en": "Dolphin",
+    "year": "2025",
+    "type": "小型纯电轿车",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-dolphin-01.png"
+    ],
+    "body": {
+      "length": "4150mm",
+      "width": "1770mm",
+      "height": "1570mm",
+      "wheelbase": "2700mm"
+    },
+    "common_features": [
+      "e平台3.0",
+      "刀片电池",
+      "12.8英寸旋转屏",
+      "DiPilot 4.0",
+      "热泵空调"
+    ],
+    "trims": [
+      {
+        "name": "420km 活力型",
+        "price": "9.98万元",
+        "engine": "单电机",
+        "power": "95马力 / 70kW",
+        "torque": "180N·m",
+        "acceleration": "-",
+        "battery": "磷酸铁锂刀片电池",
+        "range": "CLTC 420km",
+        "features": [
+          "e平台3.0",
+          "刀片电池",
+          "12.8英寸旋转屏",
+          "热泵空调"
+        ]
+      },
+      {
+        "name": "520km 骑士型",
+        "price": "12.98万元",
+        "engine": "单电机",
+        "power": "218马力 / 160kW",
+        "torque": "310N·m",
+        "acceleration": "5.9秒",
+        "battery": "磷酸铁锂刀片电池",
+        "range": "CLTC 520km",
+        "features": [
+          "e平台3.0 Evo",
+          "刀片电池",
+          "12.8英寸旋转屏",
+          "DiPilot 4.0",
+          "快充"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪海豚是海洋网小型纯电轿车，基于e平台3.0打造，以2700mm超长轴距实现越级空间。骑士版续航520km、加速5.9秒，是同级别中少有的性能之选。"
+  },
+  {
+    "id": "byd-seal-06",
+    "brand_id": "byd",
+    "name": "海豹06",
+    "name_en": "Seal 06",
+    "year": "2025",
+    "type": "中型轿车",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-seal-06-01.png"
+    ],
+    "body": {
+      "length": "4720mm",
+      "width": "1880mm",
+      "height": "1495mm",
+      "wheelbase": "2820mm"
+    },
+    "common_features": [
+      "e平台3.0 Evo",
+      "第五代DM技术",
+      "天神之眼C",
+      "12.8英寸中控屏",
+      "8.8英寸仪表",
+      "刀片电池",
+      "DiPilot 100",
+      "10.25英寸仪表"
+    ],
+    "trims": [
+      {
+        "name": "DM-i 120km 尊享型",
+        "price": "10.98万元",
+        "engine": "1.5L插电混动",
+        "power": "218马力 / 160kW",
+        "torque": "-",
+        "acceleration": "7.5秒",
+        "battery": "刀片电池",
+        "range": "CLTC纯电120km · 综合2000km",
+        "features": [
+          "第五代DM技术",
+          "天神之眼C",
+          "12.8英寸中控屏",
+          "高快领航"
+        ]
+      },
+      {
+        "name": "EV 545km 旗舰型",
+        "price": "12.98万元",
+        "engine": "单电机后驱",
+        "power": "218马力 / 160kW",
+        "torque": "310N·m",
+        "acceleration": "7.5秒",
+        "battery": "刀片电池",
+        "range": "CLTC 545km",
+        "features": [
+          "e平台3.0 Evo",
+          "后置后驱",
+          "天神之眼C",
+          "云辇-C",
+          "9安全气囊"
+        ]
+      },
+      {
+        "name": "GT 505km 智驾版海浪版",
+        "price": "13.68万元",
+        "engine": "单电机后驱",
+        "power": "218马力 / 160kW",
+        "torque": "310N·m",
+        "acceleration": "7.5秒",
+        "battery": "59.52kWh 刀片电池",
+        "range": "CLTC 505km",
+        "features": [
+          "e平台3.0 Evo",
+          "DiPilot 100",
+          "12.8英寸中控屏",
+          "快充22分钟"
+        ]
+      },
+      {
+        "name": "GT 550km 四驱热浪版",
+        "price": "18.68万元",
+        "engine": "双电机四驱",
+        "power": "422马力 / 310kW",
+        "torque": "510N·m",
+        "acceleration": "4.9秒",
+        "battery": "72.96kWh 刀片电池",
+        "range": "CLTC 550km",
+        "features": [
+          "800V高压平台",
+          "双电机四驱",
+          "FSD可变阻尼",
+          "丹拿12喇叭",
+          "W-HUD",
+          "200kW快充"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪海豹06是海洋网中型轿车，提供DM-i插混和EV纯电两种动力。DM-i版综合续航超2000km，EV版基于e平台3.0 Evo后驱平台，全系标配天神之眼C智驾。 GT版为两厢掀背造型，四驱版4.9秒破百，配备800V高压快充。"
+  },
+  {
+    "id": "byd-destroyer-05",
+    "brand_id": "byd",
+    "name": "驱逐舰05",
+    "name_en": "Destroyer 05",
+    "year": "2025",
+    "type": "紧凑型轿车",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-destroyer-05-01.png"
+    ],
+    "body": {
+      "length": "4780mm",
+      "width": "1837mm",
+      "height": "1495mm",
+      "wheelbase": "2718mm"
+    },
+    "common_features": [
+      "DM-i超级混动",
+      "12.8英寸旋转中控屏",
+      "DiLink",
+      "NFC车钥匙",
+      "LED大灯"
+    ],
+    "trims": [
+      {
+        "name": "DM-i 55km 畅行版",
+        "price": "10.18万元",
+        "engine": "1.5L插电混动",
+        "power": "180马力 / 132kW",
+        "torque": "316N·m",
+        "acceleration": "7.9秒",
+        "battery": "磷酸铁锂",
+        "range": "CLTC纯电55km · 综合1200km",
+        "features": [
+          "DM-i超级混动",
+          "12.8英寸中控屏",
+          "DiLink",
+          "NFC钥匙"
+        ]
+      },
+      {
+        "name": "DM-i 120km 畅行版",
+        "price": "12.18万元",
+        "engine": "1.5L插电混动",
+        "power": "197马力 / 145kW",
+        "torque": "325N·m",
+        "acceleration": "7.3秒",
+        "battery": "18.3kWh 磷酸铁锂",
+        "range": "CLTC纯电120km · 综合1200km",
+        "features": [
+          "DM-i超级混动",
+          "12.8英寸中控屏",
+          "DiLink",
+          "17kW直流快充",
+          "VTOL外放电"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪驱逐舰05是海洋网紧凑型轿车，采用DM-i超级混动技术。以海洋美学设计区别于王朝网同平台车型，满油满电综合续航超1200km，亏电油耗低至3.8L/100km。"
+  },
+  {
+    "id": "byd-sea-lion-05",
+    "brand_id": "byd",
+    "name": "海狮05",
+    "name_en": "Sealion 05",
+    "year": "2025",
+    "type": "紧凑型SUV",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-sea-lion-05-01.png"
+    ],
+    "body": {
+      "length": "4710mm",
+      "width": "1880mm",
+      "height": "1720mm",
+      "wheelbase": "2712mm"
+    },
+    "common_features": [
+      "第五代DM技术",
+      "DiPilot 100",
+      "12.8英寸中控屏",
+      "8.8英寸仪表",
+      "360°全景影像",
+      "哨兵模式"
+    ],
+    "trims": [
+      {
+        "name": "DM-i 75km 尊贵型",
+        "price": "11.28万元",
+        "engine": "1.5L插电混动",
+        "power": "163马力 / 120kW",
+        "torque": "210N·m",
+        "acceleration": "8.3秒",
+        "battery": "12.9kWh 刀片电池",
+        "range": "CLTC纯电75km · 综合1100km",
+        "features": [
+          "第五代DM技术",
+          "DiPilot 100",
+          "12.8英寸中控屏",
+          "全景天窗"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪海狮05是海洋网紧凑型SUV，搭载第五代DM插混技术。全系标配DiPilot 100智驾系统，亏电油耗低至4.9L/100km，以硬核实力征战紧凑型SUV市场。"
+  },
+  {
+    "id": "byd-sea-lion-06",
+    "brand_id": "byd",
+    "name": "海狮06",
+    "name_en": "Sealion 06",
+    "year": "2025",
+    "type": "中型SUV",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-sea-lion-06-01.png"
+    ],
+    "body": {
+      "length": "4810mm",
+      "width": "1920mm",
+      "height": "1675mm",
+      "wheelbase": "2820mm"
+    },
+    "common_features": [
+      "e平台3.0 Evo",
+      "天神之眼C",
+      "云辇-C",
+      "DiLink 100",
+      "12.8英寸中控屏",
+      "7安全气囊",
+      "TSC爆胎稳定控制"
+    ],
+    "trims": [
+      {
+        "name": "EV 520km 领航版",
+        "price": "14.38万元",
+        "engine": "单电机后驱",
+        "power": "231马力 / 170kW",
+        "torque": "-",
+        "acceleration": "-",
+        "battery": "65.28kWh 刀片电池",
+        "range": "CLTC 520km",
+        "features": [
+          "e平台3.0 Evo",
+          "云辇-C",
+          "天神之眼C",
+          "12.8英寸中控屏",
+          "前备箱142L"
+        ]
+      },
+      {
+        "name": "EV 605km 领航Plus版",
+        "price": "16.38万元",
+        "engine": "单电机后驱",
+        "power": "245马力 / 180kW",
+        "torque": "-",
+        "acceleration": "-",
+        "battery": "78.72kWh 刀片电池",
+        "range": "CLTC 605km",
+        "features": [
+          "e平台3.0 Evo",
+          "云辇-C",
+          "天神之眼C",
+          "丹拿12喇叭",
+          "车载冰箱",
+          "快充237kW"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪海狮06是海洋网中型纯电SUV，基于e平台3.0 Evo打造。全系标配天神之眼C智驾和云辇-C智能车身控制，最高续航605km，是海洋网纯电SUV主力车型。"
+  },
+  {
+    "id": "byd-weijian-07",
+    "brand_id": "byd",
+    "name": "护卫舰07",
+    "name_en": "Frigate 07",
+    "year": "2025",
+    "type": "中型SUV",
+    "manufacturer": "比亚迪",
+    "images": [
+      "images/cars/byd/byd-weijian-07-01.png"
+    ],
+    "body": {
+      "length": "4820mm",
+      "width": "1920mm",
+      "height": "1750mm",
+      "wheelbase": "2820mm"
+    },
+    "common_features": [
+      "DM-i超级混动",
+      "FSD可变阻尼减震器",
+      "15.6英寸旋转屏",
+      "8.8英寸仪表",
+      "DiLink",
+      "手机NFC钥匙"
+    ],
+    "trims": [
+      {
+        "name": "DM-i 100km 精英型",
+        "price": "17.98万元",
+        "engine": "1.5Ti插电混动",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "8.5秒",
+        "battery": "18.3kWh 刀片电池",
+        "range": "CLTC纯电100km · 综合1200km",
+        "features": [
+          "DM-i超级混动",
+          "FSD可变阻尼",
+          "15.6英寸旋转屏",
+          "DiLink"
+        ]
+      },
+      {
+        "name": "DM-i 205km 旗舰型",
+        "price": "22.98万元",
+        "engine": "1.5Ti插电混动",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "8.9秒",
+        "battery": "36.8kWh 刀片电池",
+        "range": "CLTC纯电205km · 综合1200km",
+        "features": [
+          "DM-i超级混动",
+          "FSD可变阻尼",
+          "15.6英寸旋转屏",
+          "丹拿12喇叭",
+          "W-HUD"
+        ]
+      },
+      {
+        "name": "DM-p 175km 四驱旗舰型",
+        "price": "25.98万元",
+        "engine": "1.5Ti插电混动四驱",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "4.7秒",
+        "battery": "刀片电池",
+        "range": "CLTC纯电175km · 综合1200km",
+        "features": [
+          "DM-p高性能四驱",
+          "FSD可变阻尼",
+          "15.6英寸旋转屏",
+          "丹拿音响",
+          "APA自动泊车"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "比亚迪护卫舰07是海洋网中型大五座SUV，全系搭载DM-i/DM-p超级混动技术。标配FSD可变阻尼减震器和大五座宽敞空间，提供100km至205km多种纯电续航选择。"
+  },
+  {
+    "id": "byd-d9",
+    "brand_id": "byd",
+    "name": "D9",
+    "name_en": "D9",
+    "year": "2025",
+    "type": "中大型MPV",
+    "manufacturer": "腾势汽车",
+    "images": [
+      "images/cars/byd/byd-d9-01.png"
+    ],
+    "body": {
+      "length": "5250mm",
+      "width": "1960mm",
+      "height": "1900mm",
+      "wheelbase": "3110mm"
+    },
+    "common_features": [
+      "天神之眼智驾",
+      "云辇-C",
+      "15.6英寸中控屏",
+      "10.25英寸仪表",
+      "帝瓦雷音响",
+      "7座",
+      "双侧电滑门"
+    ],
+    "trims": [
+      {
+        "name": "DM-i 两驱尊航型",
+        "price": "30.98万元",
+        "engine": "1.5T插电混动",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "8.6秒",
+        "battery": "39.94kWh 刀片电池",
+        "range": "CLTC纯电200km · 综合1100km",
+        "features": [
+          "DM-i",
+          "天神之眼C",
+          "云辇-C",
+          "15.6英寸中控屏",
+          "帝瓦雷音响",
+          "零重力座椅"
+        ]
+      },
+      {
+        "name": "EV 两驱尊航型",
+        "price": "31.98万元",
+        "engine": "纯电",
+        "power": "230kW",
+        "torque": "-",
+        "acceleration": "8.6秒",
+        "battery": "103.36kWh 刀片电池",
+        "range": "CLTC 620km",
+        "features": [
+          "800V高压平台",
+          "双枪超充",
+          "天神之眼C",
+          "云辇-C",
+          "帝瓦雷音响",
+          "零重力座椅"
+        ]
+      },
+      {
+        "name": "DM-i 四驱至尊型",
+        "price": "33.98万元",
+        "engine": "1.5T插电混动四驱",
+        "power": "-",
+        "torque": "-",
+        "acceleration": "7.3秒",
+        "battery": "39.94kWh 刀片电池",
+        "range": "CLTC纯电190km · 综合1020km",
+        "features": [
+          "四驱",
+          "天神之眼B",
+          "激光雷达",
+          "城市NOA",
+          "云辇-C",
+          "帝瓦雷18喇叭",
+          "双色车身"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "腾势D9是比亚迪旗下高端MPV，提供DM-i插混和纯电两种动力。以5250mm超长车身、3110mm轴距和云辇-C智能悬架，主打豪华商务和家庭出行市场，连续多年蝉联新能源MPV销量冠军。"
+  },
+  {
+    "id": "byd-n7",
+    "brand_id": "byd",
+    "name": "N7",
+    "name_en": "N7",
+    "year": "2025",
+    "type": "中型纯电SUV",
+    "manufacturer": "腾势汽车",
+    "images": [
+      "images/cars/byd/byd-n7-01.png"
+    ],
+    "body": {
+      "length": "4860mm",
+      "width": "1935mm",
+      "height": "1620mm",
+      "wheelbase": "2940mm"
+    },
+    "common_features": [
+      "800V高压平台",
+      "双激光雷达",
+      "DiPilot 300",
+      "17.3英寸中控屏",
+      "10.25英寸副驾屏",
+      "帝瓦雷音响",
+      "空气悬架"
+    ],
+    "trims": [
+      {
+        "name": "702km 智驾双激光尊荣版",
+        "price": "25.98万元",
+        "engine": "单电机后驱",
+        "power": "313马力 / 230kW",
+        "torque": "360N·m",
+        "acceleration": "6.8秒",
+        "battery": "91.3kWh 刀片电池",
+        "range": "CLTC 702km",
+        "features": [
+          "800V高压",
+          "后驱",
+          "双激光雷达",
+          "DiPilot 300",
+          "17.3英寸中控屏",
+          "帝瓦雷16喇叭",
+          "快充20分钟"
+        ]
+      },
+      {
+        "name": "630km 四驱智驾双激光旗舰版",
+        "price": "28.98万元",
+        "engine": "双电机四驱",
+        "power": "530马力 / 390kW",
+        "torque": "670N·m",
+        "acceleration": "3.9秒",
+        "battery": "91.3kWh 刀片电池",
+        "range": "CLTC 630km",
+        "features": [
+          "800V高压",
+          "四驱",
+          "双激光雷达",
+          "DiPilot 300",
+          "城市NOA",
+          "空气悬架",
+          "AR-HUD"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "腾势N7是比亚迪旗下中型纯电SUV，全系标配800V高压平台和双激光雷达。后驱版续航702km，四驱版0-100km/h加速3.9秒，搭载帝瓦雷音响和智能空气悬架。"
+  },
+  {
+    "id": "byd-n8",
+    "brand_id": "byd",
+    "name": "N8",
+    "name_en": "N8",
+    "year": "2025",
+    "type": "大型SUV",
+    "manufacturer": "腾势汽车",
+    "images": [
+      "images/cars/byd/byd-n8-01.png"
+    ],
+    "body": {
+      "length": "5200mm",
+      "width": "1999mm",
+      "height": "1820mm",
+      "wheelbase": "3075mm"
+    },
+    "common_features": [
+      "2.0T DM-p三电机四驱",
+      "云辇-P智能液压车身",
+      "DiPilot 300",
+      "17.3英寸中控屏",
+      "13.2英寸仪表",
+      "帝瓦雷音响",
+      "6座"
+    ],
+    "trims": [
+      {
+        "name": "230km 尊荣型",
+        "price": "29.98万元",
+        "engine": "2.0T插电混动四驱",
+        "power": "762马力 / 560kW",
+        "torque": "871N·m",
+        "acceleration": "3.9秒",
+        "battery": "46.99kWh 刀片电池",
+        "range": "CLTC纯电230km · 综合1300km",
+        "features": [
+          "DM-p三电机四驱",
+          "空气悬架",
+          "双叉臂+五连杆",
+          "DiPilot 300",
+          "激光雷达",
+          "帝瓦雷音响",
+          "6座"
+        ]
+      },
+      {
+        "name": "230km 旗舰型",
+        "price": "32.98万元",
+        "engine": "2.0T插电混动四驱",
+        "power": "762马力 / 560kW",
+        "torque": "871N·m",
+        "acceleration": "3.9秒",
+        "battery": "46.99kWh 刀片电池",
+        "range": "CLTC纯电230km · 综合1300km",
+        "features": [
+          "DM-p三电机四驱",
+          "空气悬架",
+          "双叉臂+五连杆",
+          "DiPilot 300",
+          "激光雷达",
+          "帝瓦雷音响",
+          "城市NOA",
+          "6座"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "腾势N8是比亚迪旗下大型SUV，搭载2.0T DM-p三电机四驱混动系统，综合马力达762匹、零百加速3.9秒。配备空气悬架、双叉臂前悬和DiPilot 300智驾，6座布局对标理想L9。"
+  },
+  {
+    "id": "byd-z9-gt",
+    "brand_id": "byd",
+    "name": "Z9 GT",
+    "name_en": "Z9 GT",
+    "year": "2025",
+    "type": "D级豪华猎装轿跑",
+    "manufacturer": "腾势汽车",
+    "images": [
+      "images/cars/byd/byd-z9-gt-01.png"
+    ],
+    "body": {
+      "length": "5180mm",
+      "width": "1990mm",
+      "height": "1480mm",
+      "wheelbase": "3125mm"
+    },
+    "common_features": [
+      "易三方三电机四驱",
+      "云辇-A空气悬架",
+      "BAS 3.0+智驾",
+      "双激光雷达",
+      "17.3英寸2.5K中控屏",
+      "帝瓦雷20喇叭",
+      "10屏互联"
+    ],
+    "trims": [
+      {
+        "name": "EV 630km 四驱Pro版",
+        "price": "35.48万元",
+        "engine": "三电机纯电四驱",
+        "power": "966马力 / 710kW",
+        "torque": "-",
+        "acceleration": "3.4秒",
+        "battery": "100kWh 刀片电池",
+        "range": "CLTC 630km",
+        "features": [
+          "易三方三电机",
+          "四驱",
+          "云辇-A空气悬架",
+          "双激光雷达",
+          "17.3英寸中控屏",
+          "帝瓦雷20喇叭",
+          "快充19分钟"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "腾势Z9 GT是比亚迪旗下D级智能豪华猎装轿跑，搭载易三方三电机四驱技术和云辇-A智能空气悬架。纯电版0-100km/h加速3.4秒，支持圆规掉头、蟹行模式，定位百万级豪华GT市场。"
+  },
+  {
+    "id": "byd-bao-5",
+    "brand_id": "byd",
+    "name": "豹5",
+    "name_en": "Bao 5",
+    "year": "2025",
+    "type": "中大型硬派SUV",
+    "manufacturer": "方程豹",
+    "images": [
+      "images/cars/byd/byd-bao-5-01.png"
+    ],
+    "body": {
+      "length": "4890mm",
+      "width": "1970mm",
+      "height": "1920mm",
+      "wheelbase": "2800mm"
+    },
+    "common_features": [
+      "DMO电驱越野平台",
+      "非承载式车身",
+      "三把锁",
+      "云辇-P智能液压车身",
+      "帝瓦雷音响",
+      "15.6英寸中控屏",
+      "12.3英寸副驾屏"
+    ],
+    "trims": [
+      {
+        "name": "210km 天神Ultra版",
+        "price": "26.98万元",
+        "engine": "1.5T插电混动",
+        "power": "687马力 / 505kW",
+        "torque": "760N·m",
+        "acceleration": "4.8秒",
+        "battery": "47.8kWh 刀片电池",
+        "range": "CLTC纯电210km · 综合1310km",
+        "features": [
+          "DMO平台",
+          "非承载式车身",
+          "三把锁",
+          "DiPilot 100",
+          "15.6英寸中控屏",
+          "帝瓦雷音响"
+        ]
+      },
+      {
+        "name": "210km 云辇乾昆Ultra+版",
+        "price": "32.98万元",
+        "engine": "1.5T插电混动",
+        "power": "687马力 / 505kW",
+        "torque": "760N·m",
+        "acceleration": "4.8秒",
+        "battery": "47.8kWh 刀片电池",
+        "range": "CLTC纯电210km · 综合1310km",
+        "features": [
+          "DMO平台",
+          "非承载式车身",
+          "三把锁",
+          "云辇-P",
+          "华为乾崑ADS 4.0",
+          "帝瓦雷音响",
+          "前排座椅按摩"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "方程豹豹5是比亚迪旗下专业硬派越野SUV，基于DMO电驱越野平台打造，采用非承载式车身和三把差速锁。零百加速4.8秒，纯电续航210km，兼顾强悍越野能力和日常使用经济性。"
+  },
+  {
+    "id": "byd-bao-8",
+    "brand_id": "byd",
+    "name": "豹8",
+    "name_en": "Bao 8",
+    "year": "2025",
+    "type": "大型硬派SUV",
+    "manufacturer": "方程豹",
+    "images": [
+      "images/cars/byd/byd-bao-8-01.png"
+    ],
+    "body": {
+      "length": "5195mm",
+      "width": "1994mm",
+      "height": "1875mm",
+      "wheelbase": "2920mm"
+    },
+    "common_features": [
+      "DMO+电驱越野平台",
+      "非承载式车身",
+      "云辇-P智能液压车身",
+      "华为乾崑ADS 4.0",
+      "17.3英寸中控屏",
+      "帝瓦雷18喇叭",
+      "6座/7座"
+    ],
+    "trims": [
+      {
+        "name": "智勇豪华版",
+        "price": "37.98万元",
+        "engine": "2.0T插电混动双电机",
+        "power": "748马力 / 550kW",
+        "torque": "760N·m",
+        "acceleration": "4.8秒",
+        "battery": "刀片电池",
+        "range": "CLTC纯电125km · 综合1200km",
+        "features": [
+          "DMO+平台",
+          "非承载式车身",
+          "华为乾崑ADS 4.0",
+          "云辇-P",
+          "17.3英寸中控屏",
+          "帝瓦雷18喇叭",
+          "6kW外放电"
+        ]
+      },
+      {
+        "name": "智勇旗舰版",
+        "price": "39.98万元",
+        "engine": "2.0T插电混动双电机",
+        "power": "748马力 / 550kW",
+        "torque": "760N·m",
+        "acceleration": "4.8秒",
+        "battery": "刀片电池",
+        "range": "CLTC纯电125km · 综合1200km",
+        "features": [
+          "DMO+平台",
+          "非承载式车身",
+          "华为乾崑ADS 4.0",
+          "云辇-P",
+          "17.3英寸中控屏",
+          "帝瓦雷18喇叭",
+          "零重力座椅",
+          "压缩机冰箱"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "方程豹豹8是比亚迪旗下大型硬派越野SUV，基于DMO+电驱越野平台打造。搭载2.0T双电机混动系统，综合马力748匹，全系标配华为乾崑ADS 4.0智驾和云辇-P智能液压车身控制。"
+  },
+  {
+    "id": "byd-u8",
+    "brand_id": "byd",
+    "name": "U8",
+    "name_en": "U8",
+    "year": "2025",
+    "type": "全尺寸行政豪华SUV",
+    "manufacturer": "仰望",
+    "images": [
+      "images/cars/byd/byd-u8-01.png"
+    ],
+    "body": {
+      "length": "5400mm",
+      "width": "2049mm",
+      "height": "1921mm",
+      "wheelbase": "3250mm"
+    },
+    "common_features": [
+      "易四方四电机独立驱动",
+      "云辇-P+智能液压车身",
+      "天神之眼A三激光雷达",
+      "23.6英寸仪表",
+      "12.8英寸OLED中控",
+      "丹拿铂金32扬声器",
+      "14安全气囊"
+    ],
+    "trims": [
+      {
+        "name": "U8L 鼎世版",
+        "price": "128万元",
+        "engine": "2.0T增程式四电机",
+        "power": "1200马力 / 880kW",
+        "torque": "1280N·m",
+        "acceleration": "3.5秒",
+        "battery": "55.53kWh 刀片电池",
+        "range": "CLTC纯电200km · 综合1160km",
+        "features": [
+          "易四方四电机",
+          "原地掉头",
+          "应急浮水",
+          "爆胎稳行",
+          "云辇-P+",
+          "三激光雷达",
+          "城市NOA",
+          "丹拿铂金32喇叭",
+          "二排双零重力座椅",
+          "后轮转向"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "仰望U8是比亚迪旗下百万级全尺寸行政豪华SUV，搭载易四方四电机独立驱动和云辇-P+智能液压车身控制系统。支持原地掉头、应急浮水等革命性功能，CLTC综合续航1160km。"
+  },
+  {
+    "id": "byd-u9",
+    "brand_id": "byd",
+    "name": "U9",
+    "name_en": "U9",
+    "year": "2025",
+    "type": "纯电超跑",
+    "manufacturer": "仰望",
+    "images": [
+      "images/cars/byd/byd-u9-01.png"
+    ],
+    "body": {
+      "length": "4966mm",
+      "width": "2029mm",
+      "height": "1295mm",
+      "wheelbase": "2900mm"
+    },
+    "common_features": [
+      "易四方四电机",
+      "云辇-X智能车身控制",
+      "CTB电池车身一体化",
+      "蝴蝶门",
+      "碳纤维车身",
+      "10.25英寸仪表",
+      "12.3英寸纵置中控屏"
+    ],
+    "trims": [
+      {
+        "name": "标准版",
+        "price": "180万元",
+        "engine": "四电机纯电",
+        "power": "1306马力 / 960kW",
+        "torque": "1680N·m",
+        "acceleration": "2.36秒",
+        "battery": "80kWh 刀片电池",
+        "range": "CLTC 450km",
+        "features": [
+          "易四方四电机",
+          "云辇-X",
+          "CTB",
+          "蝴蝶门",
+          "碳纤维套件",
+          "双枪快充",
+          "赛道模式"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "仰望U9是比亚迪旗下纯电超跑，搭载易四方四电机技术和云辇-X智能车身控制系统。0-100km/h加速仅2.36秒，最高时速309km/h，以蝴蝶门和碳纤维车身诠释中式超跑魅力。"
+  },
+  {
+    "id": "nio-es9",
+    "brand_id": "nio",
+    "name": "ES9",
+    "name_en": "ES9",
+    "year": "2026",
+    "type": "大型纯电SUV",
+    "manufacturer": "蔚来汽车",
+    "images": [
+      "images/cars/nio/nio-es9-01.png"
+    ],
+    "body": {
+      "length": "5320mm",
+      "width": "2020mm",
+      "height": "1830mm",
+      "wheelbase": "3280mm"
+    },
+    "common_features": [
+      "全域900V高压平台",
+      "神玑NX9031智驾芯片",
+      "3激光雷达",
+      "Aquila超感系统",
+      "空气悬架",
+      "魔毯智能悬架",
+      "15.6英寸中控屏",
+      "23扬声器杜比全景声",
+      "换电",
+      "6座"
+    ],
+    "trims": [
+      {
+        "name": "102kWh 六座旗舰版",
+        "price": "48.80万元",
+        "engine": "双电机四驱",
+        "power": "707马力 / 520kW",
+        "torque": "700N·m",
+        "acceleration": "4.1秒",
+        "battery": "102kWh 三元锂",
+        "range": "CLTC 650km",
+        "features": [
+          "900V平台",
+          "600kW快充",
+          "神玑NX9031",
+          "3激光雷达",
+          "空气悬架",
+          "魔毯悬架",
+          "23扬声器",
+          "6座",
+          "AR-HUD",
+          "车载冰箱"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "蔚来ES9是品牌全新旗舰SUV，定位高于ES8，以5320mm车长和3280mm轴距提供更宽敞的三排座舱。搭载全域900V高压平台、神玑NX9031智驾芯片和3激光雷达，520kW双电机四驱零百加速4.1秒。"
+  },
+  {
+    "id": "nio-es8",
+    "brand_id": "nio",
+    "name": "ES8",
+    "name_en": "ES8",
+    "year": "2026",
+    "type": "大型纯电SUV",
+    "manufacturer": "蔚来汽车",
+    "images": [
+      "images/cars/nio/nio-es8-01.png"
+    ],
+    "body": {
+      "length": "5280mm",
+      "width": "2010mm",
+      "height": "1800mm",
+      "wheelbase": "3130mm"
+    },
+    "common_features": [
+      "全域900V高压平台",
+      "神玑NX9031智驾芯片",
+      "3激光雷达",
+      "Aquila超感系统",
+      "空气悬架",
+      "魔毯悬架",
+      "15.6英寸中控屏",
+      "27扬声器杜比全景声",
+      "换电",
+      "6/7座"
+    ],
+    "trims": [
+      {
+        "name": "102kWh 六座行政豪华版",
+        "price": "40.68万元",
+        "engine": "双电机四驱",
+        "power": "707马力 / 520kW",
+        "torque": "700N·m",
+        "acceleration": "3.97秒",
+        "battery": "102kWh 三元锂",
+        "range": "CLTC 635km",
+        "features": [
+          "900V平台",
+          "600kW快充",
+          "神玑NX9031",
+          "3激光雷达",
+          "空气悬架",
+          "27扬声器",
+          "6座",
+          "AR-HUD",
+          "车载冰箱"
+        ]
+      },
+      {
+        "name": "102kWh 玄金特别版",
+        "price": "45.68万元",
+        "engine": "双电机四驱",
+        "power": "707马力 / 520kW",
+        "torque": "700N·m",
+        "acceleration": "3.97秒",
+        "battery": "102kWh 三元锂",
+        "range": "CLTC 635km",
+        "features": [
+          "900V平台",
+          "600kW快充",
+          "神玑NX9031",
+          "3激光雷达",
+          "空气悬架",
+          "27扬声器",
+          "6座",
+          "AR-HUD",
+          "后排小桌板",
+          "BaaS租电34.88万"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "蔚来ES8是品牌旗舰SUV，采用全域900V高压平台和3激光雷达方案。520kW双电机四驱零百加速3.97秒，CLTC续航635km。提供6座和7座布局，配备空气悬架、魔毯悬架和27扬声器杜比全景声音响。"
+  },
+  {
+    "id": "nio-es7",
+    "brand_id": "nio",
+    "name": "ES7",
+    "name_en": "ES7",
+    "year": "2024",
+    "type": "中大型纯电SUV",
+    "manufacturer": "蔚来汽车",
+    "images": [
+      "images/cars/nio/nio-es7-01.png"
+    ],
+    "body": {
+      "length": "4912mm",
+      "width": "1987mm",
+      "height": "1720mm",
+      "wheelbase": "2960mm"
+    },
+    "common_features": [
+      "激光雷达",
+      "4×Orin X芯片1016TOPS",
+      "NAD智驾",
+      "12.8英寸AMOLED中控屏",
+      "空气悬架",
+      "CDC动态阻尼",
+      "换电"
+    ],
+    "trims": [
+      {
+        "name": "75kWh 标准版",
+        "price": "43.80万元",
+        "engine": "双电机四驱",
+        "power": "653马力 / 480kW",
+        "torque": "850N·m",
+        "acceleration": "3.9秒",
+        "battery": "75kWh 三元锂",
+        "range": "CLTC 485km",
+        "features": [
+          "激光雷达",
+          "4×Orin X",
+          "NAD智驾",
+          "12.8英寸中控屏",
+          "空气悬架",
+          "女王副驾"
+        ]
+      },
+      {
+        "name": "100kWh 长续航版",
+        "price": "51.80万元",
+        "engine": "双电机四驱",
+        "power": "653马力 / 480kW",
+        "torque": "850N·m",
+        "acceleration": "3.9秒",
+        "battery": "100kWh 三元锂",
+        "range": "CLTC 620km",
+        "features": [
+          "激光雷达",
+          "4×Orin X",
+          "NAD智驾",
+          "12.8英寸中控屏",
+          "空气悬架",
+          "女王副驾",
+          "NOP+领航"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "蔚来ES7是中大型纯电SUV，搭载4颗英伟达Orin X芯片（1016TOPS算力）和激光雷达。480kW双电机四驱零百加速3.9秒，标配空气悬架和CDC动态阻尼控制，支持换电补能。"
+  },
+  {
+    "id": "nio-es6",
+    "brand_id": "nio",
+    "name": "ES6",
+    "name_en": "ES6",
+    "year": "2026",
+    "type": "中型纯电SUV",
+    "manufacturer": "蔚来汽车",
+    "images": [
+      "images/cars/nio/nio-es6-01.png"
+    ],
+    "body": {
+      "length": "4854mm",
+      "width": "1995mm",
+      "height": "1703mm",
+      "wheelbase": "2915mm"
+    },
+    "common_features": [
+      "神玑NX9031智驾芯片",
+      "Aquila超感系统",
+      "激光雷达",
+      "15.6英寸AMOLED中控屏",
+      "10.2英寸仪表",
+      "23扬声器杜比全景声",
+      "W-HUD",
+      "换电"
+    ],
+    "trims": [
+      {
+        "name": "100kWh 标准版",
+        "price": "33.80万元",
+        "engine": "双电机四驱",
+        "power": "490马力 / 360kW",
+        "torque": "700N·m",
+        "acceleration": "4.5秒",
+        "battery": "100kWh 三元锂",
+        "range": "CLTC 650km",
+        "features": [
+          "神玑NX9031",
+          "激光雷达",
+          "Aquila",
+          "15.6英寸AMOLED",
+          "23扬声器",
+          "零重力座椅",
+          "后排舒享套装"
+        ]
+      },
+      {
+        "name": "100kWh 自然奇境版",
+        "price": "35.00万元",
+        "engine": "双电机四驱",
+        "power": "490马力 / 360kW",
+        "torque": "700N·m",
+        "acceleration": "4.5秒",
+        "battery": "100kWh 三元锂",
+        "range": "CLTC 650km",
+        "features": [
+          "神玑NX9031",
+          "激光雷达",
+          "Aquila",
+          "15.6英寸AMOLED",
+          "23扬声器",
+          "Moon 3.0套件",
+          "专属车色"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "蔚来ES6是中型纯电SUV，2026款标配100kWh电池，CLTC续航650km。搭载神玑NX9031智驾芯片和激光雷达，360kW双电机四驱零百加速4.5秒，标配15.6英寸AMOLED中控屏和23扬声器杜比全景声。"
+  },
+  {
+    "id": "nio-ec7",
+    "brand_id": "nio",
+    "name": "EC7",
+    "name_en": "EC7",
+    "year": "2024",
+    "type": "中大型纯电轿跑SUV",
+    "manufacturer": "蔚来汽车",
+    "images": [
+      "images/cars/nio/nio-ec7-01.png"
+    ],
+    "body": {
+      "length": "4968mm",
+      "width": "1974mm",
+      "height": "1714mm",
+      "wheelbase": "2960mm"
+    },
+    "common_features": [
+      "激光雷达",
+      "4×Orin X芯片1016TOPS",
+      "NAD智驾",
+      "12.8英寸AMOLED中控屏",
+      "空气悬架",
+      "CDC动态阻尼",
+      "风阻0.23Cd",
+      "换电"
+    ],
+    "trims": [
+      {
+        "name": "75kWh 标准版",
+        "price": "45.80万元",
+        "engine": "双电机四驱",
+        "power": "653马力 / 480kW",
+        "torque": "850N·m",
+        "acceleration": "3.8秒",
+        "battery": "75kWh 三元锂",
+        "range": "CLTC 490km",
+        "features": [
+          "激光雷达",
+          "4×Orin X",
+          "NAD智驾",
+          "12.8英寸中控屏",
+          "空气悬架",
+          "CDC",
+          "风阻0.23Cd"
+        ]
+      },
+      {
+        "name": "100kWh 长续航版",
+        "price": "51.80万元",
+        "engine": "双电机四驱",
+        "power": "653马力 / 480kW",
+        "torque": "850N·m",
+        "acceleration": "3.8秒",
+        "battery": "100kWh 三元锂",
+        "range": "CLTC 635km",
+        "features": [
+          "激光雷达",
+          "4×Orin X",
+          "NAD智驾",
+          "12.8英寸中控屏",
+          "空气悬架",
+          "CDC",
+          "NOP+领航",
+          "23扬声器"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "蔚来EC7是中大型纯电轿跑SUV，以0.23Cd的超低风阻系数成为全球最低风阻SUV之一。480kW双电机四驱零百加速3.8秒，搭载激光雷达和4颗Orin X芯片，支持换电补能。"
+  },
+  {
+    "id": "nio-ec6",
+    "brand_id": "nio",
+    "name": "EC6",
+    "name_en": "EC6",
+    "year": "2026",
+    "type": "中型纯电轿跑SUV",
+    "manufacturer": "蔚来汽车",
+    "images": [
+      "images/cars/nio/nio-ec6-01.png"
+    ],
+    "body": {
+      "length": "4849mm",
+      "width": "1995mm",
+      "height": "1697mm",
+      "wheelbase": "2915mm"
+    },
+    "common_features": [
+      "神玑NX9031智驾芯片",
+      "Aquila超感系统",
+      "激光雷达",
+      "15.6英寸AMOLED中控屏",
+      "10.2英寸仪表",
+      "23扬声器杜比全景声",
+      "W-HUD",
+      "风阻0.24Cd",
+      "换电"
+    ],
+    "trims": [
+      {
+        "name": "100kWh 标准版",
+        "price": "35.80万元",
+        "engine": "双电机四驱",
+        "power": "490马力 / 360kW",
+        "torque": "700N·m",
+        "acceleration": "4.4秒",
+        "battery": "100kWh 三元锂",
+        "range": "CLTC 655km",
+        "features": [
+          "神玑NX9031",
+          "激光雷达",
+          "Aquila",
+          "15.6英寸AMOLED",
+          "23扬声器",
+          "Moon 3.0套件",
+          "零重力座椅"
+        ]
+      },
+      {
+        "name": "100kWh 自然奇境版",
+        "price": "37.00万元",
+        "engine": "双电机四驱",
+        "power": "490马力 / 360kW",
+        "torque": "700N·m",
+        "acceleration": "4.4秒",
+        "battery": "100kWh 三元锂",
+        "range": "CLTC 655km",
+        "features": [
+          "神玑NX9031",
+          "激光雷达",
+          "Aquila",
+          "15.6英寸AMOLED",
+          "23扬声器",
+          "Moon 3.0套件",
+          "专属车色"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "蔚来EC6是中型纯电轿跑SUV，2026款标配100kWh电池，CLTC续航655km。搭载神玑NX9031智驾芯片，360kW双电机四驱零百加速4.4秒，风阻系数0.24Cd，标配Moon 3.0外观套件。"
+  },
+  {
+    "id": "nio-et9",
+    "brand_id": "nio",
+    "name": "ET9",
+    "name_en": "ET9",
+    "year": "2025",
+    "type": "大型纯电行政轿车",
+    "manufacturer": "蔚来汽车",
+    "images": [
+      "images/cars/nio/nio-et9-01.png"
+    ],
+    "body": {
+      "length": "5325mm",
+      "width": "2017mm",
+      "height": "1621mm",
+      "wheelbase": "3250mm"
+    },
+    "common_features": [
+      "全域900V高压平台",
+      "神玑NX9031智驾芯片",
+      "3激光雷达",
+      "Aquila超感系统",
+      "SkyOS天枢",
+      "15.6英寸中控屏",
+      "35扬声器杜比全景声",
+      "线控转向",
+      "魔毯智能悬架",
+      "换电"
+    ],
+    "trims": [
+      {
+        "name": "102kWh 标准版",
+        "price": "76.80万元",
+        "engine": "双电机四驱",
+        "power": "707马力 / 520kW",
+        "torque": "700N·m",
+        "acceleration": "4.1秒",
+        "battery": "102kWh 三元锂",
+        "range": "CLTC 620km",
+        "features": [
+          "900V平台",
+          "600kW快充",
+          "神玑NX9031",
+          "3激光雷达",
+          "35扬声器",
+          "魔毯悬架",
+          "线控转向",
+          "AR-HUD",
+          "车载冰箱"
+        ]
+      },
+      {
+        "name": "102kWh 地平线特别版",
+        "price": "81.80万元",
+        "engine": "双电机四驱",
+        "power": "707马力 / 520kW",
+        "torque": "700N·m",
+        "acceleration": "4.3秒",
+        "battery": "102kWh 三元锂",
+        "range": "CLTC 620km",
+        "features": [
+          "900V平台",
+          "600kW快充",
+          "神玑NX9031",
+          "3激光雷达",
+          "35扬声器",
+          "魔毯悬架",
+          "双14.5英寸后排屏",
+          "BaaS租电71万"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "蔚来ET9是品牌旗舰行政轿车，基于全域900V高压架构打造，搭载神玑NX9031智驾芯片和3颗激光雷达。520kW双电机四驱，0-100km/h加速4.1秒，以线控转向、魔毯智能悬架和35扬声器杜比全景声定义智能电动旗舰新标准。"
+  },
+  {
+    "id": "nio-et7",
+    "brand_id": "nio",
+    "name": "ET7",
+    "name_en": "ET7",
+    "year": "2025",
+    "type": "中大型纯电轿车",
+    "manufacturer": "蔚来汽车",
+    "images": [
+      "images/cars/nio/nio-et7-01.png"
+    ],
+    "body": {
+      "length": "5101mm",
+      "width": "1987mm",
+      "height": "1509mm",
+      "wheelbase": "3060mm"
+    },
+    "common_features": [
+      "900V高压平台",
+      "激光雷达",
+      "4×Orin X芯片1016TOPS",
+      "NAD智驾",
+      "12.8英寸AMOLED中控屏",
+      "23扬声器杜比全景声",
+      "空气悬架",
+      "换电"
+    ],
+    "trims": [
+      {
+        "name": "75kWh 版",
+        "price": "34.80万元",
+        "engine": "双电机四驱",
+        "power": "653马力 / 480kW",
+        "torque": "850N·m",
+        "acceleration": "3.8秒",
+        "battery": "75kWh 三元锂",
+        "range": "CLTC 530km",
+        "features": [
+          "900V平台",
+          "激光雷达",
+          "4×Orin X",
+          "NAD智驾",
+          "12.8英寸中控屏",
+          "空气悬架"
+        ]
+      },
+      {
+        "name": "100kWh 版",
+        "price": "39.60万元",
+        "engine": "双电机四驱",
+        "power": "653马力 / 480kW",
+        "torque": "850N·m",
+        "acceleration": "3.8秒",
+        "battery": "100kWh 三元锂",
+        "range": "CLTC 675km",
+        "features": [
+          "900V平台",
+          "激光雷达",
+          "4×Orin X",
+          "NAD智驾",
+          "12.8英寸中控屏",
+          "空气悬架",
+          "23扬声器",
+          "NOP+领航"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "蔚来ET7是中大型纯电轿车，2025款升级至900V高压平台。搭载4颗Orin X芯片（1016TOPS算力）和激光雷达，480kW双电机四驱零百加速3.8秒，支持150kWh半固态电池续航超1000km。"
+  },
+  {
+    "id": "nio-et5",
+    "brand_id": "nio",
+    "name": "ET5",
+    "name_en": "ET5",
+    "year": "2026",
+    "type": "中型纯电轿车",
+    "manufacturer": "蔚来汽车",
+    "images": [
+      "images/cars/nio/nio-et5-01.png"
+    ],
+    "body": {
+      "length": "4790mm",
+      "width": "1960mm",
+      "height": "1499mm",
+      "wheelbase": "2888mm"
+    },
+    "common_features": [
+      "神玑NX9031智驾芯片",
+      "Aquila超感系统",
+      "激光雷达",
+      "15.6英寸AMOLED中控屏",
+      "10.2英寸仪表",
+      "23扬声器杜比全景声",
+      "W-HUD",
+      "换电"
+    ],
+    "trims": [
+      {
+        "name": "100kWh 标准版",
+        "price": "29.80万元",
+        "engine": "双电机四驱",
+        "power": "490马力 / 360kW",
+        "torque": "700N·m",
+        "acceleration": "4.0秒",
+        "battery": "100kWh 三元锂",
+        "range": "CLTC 740km",
+        "features": [
+          "神玑NX9031",
+          "激光雷达",
+          "Aquila",
+          "15.6英寸AMOLED",
+          "23扬声器",
+          "Moon 3.0套件"
+        ]
+      },
+      {
+        "name": "100kWh 自然奇境版",
+        "price": "31.00万元",
+        "engine": "双电机四驱",
+        "power": "490马力 / 360kW",
+        "torque": "700N·m",
+        "acceleration": "4.0秒",
+        "battery": "100kWh 三元锂",
+        "range": "CLTC 740km",
+        "features": [
+          "神玑NX9031",
+          "激光雷达",
+          "Aquila",
+          "15.6英寸AMOLED",
+          "23扬声器",
+          "Moon 3.0套件",
+          "专属车色"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "蔚来ET5是中型纯电轿车，2026款标配100kWh电池，CLTC续航达740km。搭载神玑NX9031智驾芯片和激光雷达，360kW双电机四驱零百加速4.0秒，标配Moon 3.0外观套件和15.6英寸AMOLED中控屏。"
+  },
+  {
+    "id": "nio-et5t",
+    "brand_id": "nio",
+    "name": "ET5T",
+    "name_en": "ET5 Touring",
+    "year": "2026",
+    "type": "中型纯电旅行车",
+    "manufacturer": "蔚来汽车",
+    "images": [
+      "images/cars/nio/nio-et5t-01.png"
+    ],
+    "body": {
+      "length": "4790mm",
+      "width": "1960mm",
+      "height": "1499mm",
+      "wheelbase": "2888mm"
+    },
+    "common_features": [
+      "神玑NX9031智驾芯片",
+      "Aquila超感系统",
+      "激光雷达",
+      "15.6英寸AMOLED中控屏",
+      "10.2英寸仪表",
+      "23扬声器杜比全景声",
+      "W-HUD",
+      "换电",
+      "旅行车造型"
+    ],
+    "trims": [
+      {
+        "name": "100kWh 标准版",
+        "price": "29.80万元",
+        "engine": "双电机四驱",
+        "power": "490马力 / 360kW",
+        "torque": "700N·m",
+        "acceleration": "4.0秒",
+        "battery": "100kWh 三元锂",
+        "range": "CLTC 710km",
+        "features": [
+          "神玑NX9031",
+          "激光雷达",
+          "Aquila",
+          "15.6英寸AMOLED",
+          "23扬声器",
+          "Moon 3.0套件",
+          "后备箱1687L"
+        ]
+      },
+      {
+        "name": "100kWh 自然奇境版",
+        "price": "31.00万元",
+        "engine": "双电机四驱",
+        "power": "490马力 / 360kW",
+        "torque": "700N·m",
+        "acceleration": "4.0秒",
+        "battery": "100kWh 三元锂",
+        "range": "CLTC 710km",
+        "features": [
+          "神玑NX9031",
+          "激光雷达",
+          "Aquila",
+          "15.6英寸AMOLED",
+          "23扬声器",
+          "Moon 3.0套件",
+          "专属车色"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "蔚来ET5T是ET5的旅行版车型，在保持双电机四驱4.0秒零百加速的同时，提供更实用的后备箱空间（最大1687L）。标配100kWh电池CLTC续航710km，搭载神玑NX9031智驾芯片和激光雷达。"
+  },
+  {
+    "id": "nio-l60",
+    "brand_id": "nio",
+    "name": "乐道 L60",
+    "name_en": "ONVO L60",
+    "year": "2026",
+    "type": "中型纯电SUV",
+    "manufacturer": "蔚来汽车（乐道）",
+    "images": [
+      "images/cars/nio/nio-l60-01.png"
+    ],
+    "body": {
+      "length": "4828mm",
+      "width": "1930mm",
+      "height": "1616mm",
+      "wheelbase": "2950mm"
+    },
+    "common_features": [
+      "900V高压平台",
+      "换电",
+      "ONVO智驾",
+      "17.2英寸中控屏",
+      "13英寸HUD",
+      "8英寸后排屏",
+      "20扬声器",
+      "纯视觉智驾方案",
+      "可换电"
+    ],
+    "trims": [
+      {
+        "name": "60kWh 标准版",
+        "price": "20.69万元",
+        "engine": "单电机后驱",
+        "power": "326马力 / 240kW",
+        "torque": "305N·m",
+        "acceleration": "5.9秒",
+        "battery": "60kWh 磷酸铁锂",
+        "range": "CLTC 555km",
+        "features": [
+          "900V平台",
+          "单电机后驱",
+          "17.2英寸中控屏",
+          "13英寸HUD",
+          "纯视觉智驾",
+          "换电",
+          "BaaS租电14.99万"
+        ]
+      },
+      {
+        "name": "85kWh 长续航版",
+        "price": "23.69万元",
+        "engine": "单电机后驱",
+        "power": "326马力 / 240kW",
+        "torque": "305N·m",
+        "acceleration": "5.9秒",
+        "battery": "85kWh 三元锂",
+        "range": "CLTC 730km",
+        "features": [
+          "900V平台",
+          "单电机后驱",
+          "17.2英寸中控屏",
+          "13英寸HUD",
+          "纯视觉智驾",
+          "换电",
+          "BaaS租电16.99万"
+        ]
+      },
+      {
+        "name": "85kWh 四驱版",
+        "price": "25.69万元",
+        "engine": "双电机四驱",
+        "power": "462马力 / 340kW",
+        "torque": "440N·m",
+        "acceleration": "4.6秒",
+        "battery": "85kWh 三元锂",
+        "range": "CLTC 700km",
+        "features": [
+          "900V平台",
+          "双电机四驱",
+          "17.2英寸中控屏",
+          "13英寸HUD",
+          "纯视觉智驾",
+          "换电",
+          "20扬声器"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "乐道L60是蔚来旗下ONVO品牌首款车型，定位中型纯电SUV直接对标特斯拉Model Y。基于900V平台打造，提供60kWh和85kWh两种电池，CLTC续航最高730km。采用纯视觉智驾方案，全系支持换电，BaaS租电起售价仅14.99万。"
+  },
+  {
+    "id": "nio-firefly",
+    "brand_id": "nio",
+    "name": "萤火虫",
+    "name_en": "Firefly",
+    "year": "2025",
+    "type": "小型纯电轿车",
+    "manufacturer": "蔚来汽车（萤火虫）",
+    "images": [
+      "images/cars/nio/nio-firefly-01.png"
+    ],
+    "body": {
+      "length": "3998mm",
+      "width": "1760mm",
+      "height": "1550mm",
+      "wheelbase": "2560mm"
+    },
+    "common_features": [
+      "换电",
+      "400V平台",
+      "萤火虫智驾",
+      "12.8英寸中控屏",
+      "6扬声器",
+      "L2级辅助驾驶",
+      "小巧灵活"
+    ],
+    "trims": [
+      {
+        "name": "42kWh 标准版",
+        "price": "11.98万元",
+        "engine": "单电机后驱",
+        "power": "136马力 / 100kW",
+        "torque": "150N·m",
+        "acceleration": "8.5秒",
+        "battery": "42kWh 磷酸铁锂",
+        "range": "CLTC 420km",
+        "features": [
+          "400V平台",
+          "换电",
+          "萤火虫智驾",
+          "12.8英寸中控屏",
+          "BaaS租电8.88万"
+        ]
+      },
+      {
+        "name": "50kWh 长续航版",
+        "price": "13.98万元",
+        "engine": "单电机后驱",
+        "power": "136马力 / 100kW",
+        "torque": "150N·m",
+        "acceleration": "8.5秒",
+        "battery": "50kWh 磷酸铁锂",
+        "range": "CLTC 500km",
+        "features": [
+          "400V平台",
+          "换电",
+          "萤火虫智驾",
+          "12.8英寸中控屏",
+          "倒车影像",
+          "BaaS租电10.38万"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "萤火虫是蔚来旗下第三品牌Firefly的首款车型，定位小型纯电轿车，以精致设计和高性价比面向年轻用户。搭载42kWh和50kWh磷酸铁锂电池，CLTC续航最高500km，支持换电补能，BaaS租电起售价仅8.88万。"
+  },
+  {
+    "id": "xpeng-x9",
+    "brand_id": "xpeng",
+    "name": "X9",
+    "name_en": "X9",
+    "year": "2025",
+    "type": "大型纯电MPV",
+    "manufacturer": "小鹏汽车",
+    "images": [
+      "images/cars/xpeng/xpeng-x9-01.png"
+    ],
+    "body": {
+      "length": "5293mm",
+      "width": "1988mm",
+      "height": "1785mm",
+      "wheelbase": "3160mm"
+    },
+    "common_features": [
+      "800V高压平台",
+      "XNGP智驾",
+      "2激光雷达",
+      "后轮转向",
+      "21.4英寸后排娱乐屏",
+      "17.3英寸中控屏",
+      "冷热双用冰箱",
+      "魔毯悬架",
+      "第三排电动魔术折叠"
+    ],
+    "trims": [
+      {
+        "name": "610km 长续航版",
+        "price": "35.98万元",
+        "engine": "单电机前驱",
+        "power": "320马力 / 235kW",
+        "torque": "450N·m",
+        "acceleration": "7.7秒",
+        "battery": "84.5kWh 三元锂",
+        "range": "CLTC 610km",
+        "features": [
+          "800V平台",
+          "XNGP智驾",
+          "后轮转向",
+          "17.3英寸中控屏",
+          "21.4英寸后排屏",
+          "魔毯悬架",
+          "第三排电动折叠"
+        ]
+      },
+      {
+        "name": "702km 超长续航版",
+        "price": "37.98万元",
+        "engine": "单电机前驱",
+        "power": "320马力 / 235kW",
+        "torque": "450N·m",
+        "acceleration": "7.7秒",
+        "battery": "101.5kWh 三元锂",
+        "range": "CLTC 702km",
+        "features": [
+          "800V平台",
+          "XNGP智驾",
+          "后轮转向",
+          "17.3英寸中控屏",
+          "21.4英寸后排屏",
+          "魔毯悬架",
+          "车载冰箱",
+          "第三排电动折叠"
+        ]
+      },
+      {
+        "name": "640km 四驱高性能版",
+        "price": "41.98万元",
+        "engine": "双电机四驱",
+        "power": "503马力 / 370kW",
+        "torque": "640N·m",
+        "acceleration": "5.7秒",
+        "battery": "101.5kWh 三元锂",
+        "range": "CLTC 640km",
+        "features": [
+          "800V平台",
+          "XNGP智驾",
+          "后轮转向",
+          "双电机四驱",
+          "17.3英寸中控屏",
+          "21.4英寸后排屏",
+          "魔毯悬架",
+          "车载冰箱"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "小鹏X9是品牌旗舰大型纯电MPV，基于800V高压平台打造。标配后轮转向和魔毯智能悬架，第三排支持电动魔术折叠。XNGP全场景智驾配合2颗激光雷达，CLTC续航最高702km，是家庭出行的智能之选。"
+  },
+  {
+    "id": "xpeng-g9",
+    "brand_id": "xpeng",
+    "name": "G9",
+    "name_en": "G9",
+    "year": "2024",
+    "type": "中大型纯电SUV",
+    "manufacturer": "小鹏汽车",
+    "images": [
+      "images/cars/xpeng/xpeng-g9-01.png"
+    ],
+    "body": {
+      "length": "4891mm",
+      "width": "1937mm",
+      "height": "1680mm",
+      "wheelbase": "2998mm"
+    },
+    "common_features": [
+      "800V高压平台",
+      "XNGP智驾",
+      "2激光雷达",
+      "5D音乐座舱",
+      "14.96英寸双联屏",
+      "21扬声器杜比全景声",
+      "空气悬架",
+      "电吸门"
+    ],
+    "trims": [
+      {
+        "name": "570km 标准版",
+        "price": "24.88万元",
+        "engine": "单电机后驱",
+        "power": "313马力 / 230kW",
+        "torque": "430N·m",
+        "acceleration": "6.4秒",
+        "battery": "78kWh 磷酸铁锂",
+        "range": "CLTC 570km",
+        "features": [
+          "800V平台",
+          "XNGP智驾",
+          "14.96英寸双联屏",
+          "21扬声器",
+          "Nappa真皮",
+          "电吸门"
+        ]
+      },
+      {
+        "name": "702km 长续航版",
+        "price": "26.88万元",
+        "engine": "单电机后驱",
+        "power": "313马力 / 230kW",
+        "torque": "430N·m",
+        "acceleration": "6.4秒",
+        "battery": "98kWh 三元锂",
+        "range": "CLTC 702km",
+        "features": [
+          "800V平台",
+          "XNGP智驾",
+          "14.96英寸双联屏",
+          "21扬声器",
+          "空气悬架",
+          "电吸门",
+          "5D音乐座舱"
+        ]
+      },
+      {
+        "name": "650km 四驱版",
+        "price": "28.88万元",
+        "engine": "双电机四驱",
+        "power": "551马力 / 405kW",
+        "torque": "717N·m",
+        "acceleration": "3.9秒",
+        "battery": "98kWh 三元锂",
+        "range": "CLTC 650km",
+        "features": [
+          "800V平台",
+          "XNGP智驾",
+          "14.96英寸双联屏",
+          "21扬声器",
+          "空气悬架",
+          "电吸门",
+          "5D音乐座舱",
+          "双电机四驱"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "小鹏G9是中大型纯电SUV，2024款全系标配800V高压平台和XNGP智驾。后驱版CLTC续航最高702km，四驱版零百加速仅3.9秒。5D音乐座舱融合14.96英寸双联屏和21扬声器杜比全景声，定义智能SUV新体验。"
+  },
+  {
+    "id": "xpeng-g7",
+    "brand_id": "xpeng",
+    "name": "G7",
+    "name_en": "G7",
+    "year": "2025",
+    "type": "中型纯电SUV",
+    "manufacturer": "小鹏汽车",
+    "images": [
+      "images/cars/xpeng/xpeng-g7-01.png"
+    ],
+    "body": {
+      "length": "4820mm",
+      "width": "1930mm",
+      "height": "1660mm",
+      "wheelbase": "2900mm"
+    },
+    "common_features": [
+      "800V高压平台",
+      "XNGP智驾",
+      "激光雷达",
+      "15.6英寸中控屏",
+      "18扬声器",
+      "无边框车门",
+      "电尾门"
+    ],
+    "trims": [
+      {
+        "name": "600km 标准版",
+        "price": "22.99万元",
+        "engine": "单电机后驱",
+        "power": "296马力 / 218kW",
+        "torque": "440N·m",
+        "acceleration": "6.5秒",
+        "battery": "66kWh 磷酸铁锂",
+        "range": "CLTC 600km",
+        "features": [
+          "800V平台",
+          "XNGP智驾",
+          "15.6英寸中控屏",
+          "18扬声器",
+          "无边框车门"
+        ]
+      },
+      {
+        "name": "750km 长续航版",
+        "price": "25.99万元",
+        "engine": "单电机后驱",
+        "power": "296马力 / 218kW",
+        "torque": "440N·m",
+        "acceleration": "6.5秒",
+        "battery": "87.5kWh 三元锂",
+        "range": "CLTC 750km",
+        "features": [
+          "800V平台",
+          "XNGP智驾",
+          "激光雷达",
+          "15.6英寸中控屏",
+          "18扬声器",
+          "无边框车门",
+          "电尾门"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "小鹏G7是品牌全新中型纯电SUV，定位介于G9和G6之间。基于800V高压平台打造，CLTC续航最高750km。搭载XNGP智驾和激光雷达，以动感设计和智能科技满足年轻家庭用户需求。"
+  },
+  {
+    "id": "xpeng-g6",
+    "brand_id": "xpeng",
+    "name": "G6",
+    "name_en": "G6",
+    "year": "2024",
+    "type": "中型纯电SUV",
+    "manufacturer": "小鹏汽车",
+    "images": [
+      "images/cars/xpeng/xpeng-g6-01.png"
+    ],
+    "body": {
+      "length": "4753mm",
+      "width": "1920mm",
+      "height": "1650mm",
+      "wheelbase": "2890mm"
+    },
+    "common_features": [
+      "800V高压平台",
+      "XNGP智驾",
+      "激光雷达",
+      "14.96英寸中控屏",
+      "18扬声器",
+      "电尾门",
+      "无边框车门"
+    ],
+    "trims": [
+      {
+        "name": "580km 标准版",
+        "price": "19.99万元",
+        "engine": "单电机后驱",
+        "power": "296马力 / 218kW",
+        "torque": "440N·m",
+        "acceleration": "6.6秒",
+        "battery": "66kWh 磷酸铁锂",
+        "range": "CLTC 580km",
+        "features": [
+          "800V平台",
+          "XNGP智驾",
+          "14.96英寸中控屏",
+          "18扬声器",
+          "无边框车门"
+        ]
+      },
+      {
+        "name": "755km 长续航版",
+        "price": "22.79万元",
+        "engine": "单电机后驱",
+        "power": "296马力 / 218kW",
+        "torque": "440N·m",
+        "acceleration": "6.6秒",
+        "battery": "87.5kWh 三元锂",
+        "range": "CLTC 755km",
+        "features": [
+          "800V平台",
+          "XNGP智驾",
+          "14.96英寸中控屏",
+          "18扬声器",
+          "无边框车门",
+          "激光雷达"
+        ]
+      },
+      {
+        "name": "700km 四驱版",
+        "price": "26.69万元",
+        "engine": "双电机四驱",
+        "power": "487马力 / 358kW",
+        "torque": "660N·m",
+        "acceleration": "4.1秒",
+        "battery": "87.5kWh 三元锂",
+        "range": "CLTC 700km",
+        "features": [
+          "800V平台",
+          "XNGP智驾",
+          "14.96英寸中控屏",
+          "18扬声器",
+          "激光雷达",
+          "双电机四驱"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "小鹏G6是中型纯电SUV，全系标配800V高压平台和XNGP智驾。CLTC续航最高755km，四驱版零百加速4.1秒。以19.99万的起售价成为800V平台最具性价比的SUV选择之一。"
+  },
+  {
+    "id": "xpeng-gx",
+    "brand_id": "xpeng",
+    "name": "GX",
+    "name_en": "GX",
+    "year": "2025",
+    "type": "中型纯电跨界SUV",
+    "manufacturer": "小鹏汽车",
+    "images": [
+      "images/cars/xpeng/xpeng-gx-01.png"
+    ],
+    "body": {
+      "length": "4780mm",
+      "width": "1920mm",
+      "height": "1630mm",
+      "wheelbase": "2885mm"
+    },
+    "common_features": [
+      "800V高压平台",
+      "XNGP智驾",
+      "激光雷达",
+      "15.6英寸中控屏",
+      "18扬声器",
+      "全景天幕",
+      "跨界造型"
+    ],
+    "trims": [
+      {
+        "name": "580km 标准版",
+        "price": "20.99万元",
+        "engine": "单电机后驱",
+        "power": "296马力 / 218kW",
+        "torque": "440N·m",
+        "acceleration": "6.6秒",
+        "battery": "66kWh 磷酸铁锂",
+        "range": "CLTC 580km",
+        "features": [
+          "800V平台",
+          "XNGP智驾",
+          "15.6英寸中控屏",
+          "18扬声器",
+          "全景天幕",
+          "跨界造型"
+        ]
+      },
+      {
+        "name": "730km 长续航版",
+        "price": "23.99万元",
+        "engine": "单电机后驱",
+        "power": "296马力 / 218kW",
+        "torque": "440N·m",
+        "acceleration": "6.6秒",
+        "battery": "87.5kWh 三元锂",
+        "range": "CLTC 730km",
+        "features": [
+          "800V平台",
+          "XNGP智驾",
+          "激光雷达",
+          "15.6英寸中控屏",
+          "18扬声器",
+          "全景天幕",
+          "跨界造型"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "小鹏GX是品牌全新中型纯电跨界SUV，融合SUV的通过性和轿跑的运动造型。基于800V高压平台打造，CLTC续航最高730km，搭载XNGP智驾和激光雷达，以跨界设计引领个性出行潮流。"
+  },
+  {
+    "id": "xpeng-p7-plus",
+    "brand_id": "xpeng",
+    "name": "P7+",
+    "name_en": "P7+",
+    "year": "2025",
+    "type": "中大型纯电轿跑",
+    "manufacturer": "小鹏汽车",
+    "images": [
+      "images/cars/xpeng/xpeng-p7-plus-01.png"
+    ],
+    "body": {
+      "length": "5056mm",
+      "width": "1937mm",
+      "height": "1512mm",
+      "wheelbase": "3000mm"
+    },
+    "common_features": [
+      "800V高压平台",
+      "AI鹰眼智驾",
+      "纯视觉方案",
+      "15.6英寸中控屏",
+      "9英寸流媒体后视镜",
+      "20扬声器",
+      "掀背尾门",
+      "全景天幕"
+    ],
+    "trims": [
+      {
+        "name": "602km 标准版",
+        "price": "18.68万元",
+        "engine": "单电机后驱",
+        "power": "286马力 / 210kW",
+        "torque": "420N·m",
+        "acceleration": "6.8秒",
+        "battery": "60.7kWh 磷酸铁锂",
+        "range": "CLTC 602km",
+        "features": [
+          "800V平台",
+          "AI鹰眼智驾",
+          "纯视觉",
+          "15.6英寸中控屏",
+          "20扬声器",
+          "掀背尾门"
+        ]
+      },
+      {
+        "name": "725km 长续航版",
+        "price": "19.88万元",
+        "engine": "单电机后驱",
+        "power": "286马力 / 210kW",
+        "torque": "420N·m",
+        "acceleration": "6.8秒",
+        "battery": "76kWh 磷酸铁锂",
+        "range": "CLTC 725km",
+        "features": [
+          "800V平台",
+          "AI鹰眼智驾",
+          "纯视觉",
+          "15.6英寸中控屏",
+          "20扬声器",
+          "掀背尾门",
+          "9英寸流媒体后视镜"
+        ]
+      },
+      {
+        "name": "685km 限定版",
+        "price": "21.88万元",
+        "engine": "单电机后驱",
+        "power": "286马力 / 210kW",
+        "torque": "420N·m",
+        "acceleration": "6.8秒",
+        "battery": "76kWh 磷酸铁锂",
+        "range": "CLTC 685km",
+        "features": [
+          "800V平台",
+          "AI鹰眼智驾",
+          "纯视觉",
+          "15.6英寸中控屏",
+          "20扬声器",
+          "掀背尾门",
+          "专属内饰套件"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "小鹏P7+是品牌最新中大型纯电轿跑，搭载AI鹰眼纯视觉智驾方案。5056mm车长和3000mm轴距带来宽敞座舱空间，配合掀背尾门兼顾美感与实用。800V平台CLTC续航最高725km，起售价仅18.68万。"
+  },
+  {
+    "id": "xpeng-p5",
+    "brand_id": "xpeng",
+    "name": "P5",
+    "name_en": "P5",
+    "year": "2024",
+    "type": "紧凑型纯电轿车",
+    "manufacturer": "小鹏汽车",
+    "images": [
+      "images/cars/xpeng/xpeng-p5-01.png"
+    ],
+    "body": {
+      "length": "4860mm",
+      "width": "1840mm",
+      "height": "1520mm",
+      "wheelbase": "2768mm"
+    },
+    "common_features": [
+      "XNGP智驾",
+      "激光雷达",
+      "15.6英寸中控屏",
+      "12.3英寸仪表",
+      "8扬声器",
+      "车载冰箱",
+      "全景天幕"
+    ],
+    "trims": [
+      {
+        "name": "500km 标准版",
+        "price": "15.69万元",
+        "engine": "单电机前驱",
+        "power": "211马力 / 155kW",
+        "torque": "310N·m",
+        "acceleration": "7.5秒",
+        "battery": "55.9kWh 磷酸铁锂",
+        "range": "CLTC 500km",
+        "features": [
+          "XNGP智驾",
+          "15.6英寸中控屏",
+          "12.3英寸仪表",
+          "全景天幕"
+        ]
+      },
+      {
+        "name": "510km 智驾版",
+        "price": "17.49万元",
+        "engine": "单电机前驱",
+        "power": "211马力 / 155kW",
+        "torque": "310N·m",
+        "acceleration": "7.5秒",
+        "battery": "55.9kWh 磷酸铁锂",
+        "range": "CLTC 510km",
+        "features": [
+          "XNGP智驾",
+          "激光雷达",
+          "15.6英寸中控屏",
+          "12.3英寸仪表",
+          "车载冰箱",
+          "全景天幕"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "小鹏P5是紧凑型纯电轿车，以亲民价格提供XNGP智驾体验。搭载激光雷达和15.6英寸中控屏，支持城市NGP功能。车内配备车载冰箱和全景天幕，兼顾智能科技与实用舒适。"
+  },
+  {
+    "id": "xpeng-g3i",
+    "brand_id": "xpeng",
+    "name": "G3i",
+    "name_en": "G3i",
+    "year": "2024",
+    "type": "紧凑型纯电SUV",
+    "manufacturer": "小鹏汽车",
+    "images": [
+      "images/cars/xpeng/xpeng-g3i-01.png"
+    ],
+    "body": {
+      "length": "4495mm",
+      "width": "1820mm",
+      "height": "1610mm",
+      "wheelbase": "2625mm"
+    },
+    "common_features": [
+      "XNGP智驾",
+      "激光雷达",
+      "15.6英寸中控屏",
+      "12.3英寸仪表",
+      "8扬声器",
+      "全景天幕",
+      "电动尾门"
+    ],
+    "trims": [
+      {
+        "name": "460km 标准版",
+        "price": "14.89万元",
+        "engine": "单电机前驱",
+        "power": "197马力 / 145kW",
+        "torque": "300N·m",
+        "acceleration": "8.6秒",
+        "battery": "55kWh 磷酸铁锂",
+        "range": "CLTC 460km",
+        "features": [
+          "XNGP智驾",
+          "15.6英寸中控屏",
+          "12.3英寸仪表",
+          "全景天幕"
+        ]
+      },
+      {
+        "name": "520km 长续航版",
+        "price": "16.39万元",
+        "engine": "单电机前驱",
+        "power": "197马力 / 145kW",
+        "torque": "300N·m",
+        "acceleration": "8.6秒",
+        "battery": "66kWh 磷酸铁锂",
+        "range": "CLTC 520km",
+        "features": [
+          "XNGP智驾",
+          "激光雷达",
+          "15.6英寸中控屏",
+          "12.3英寸仪表",
+          "全景天幕",
+          "电动尾门"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "小鹏G3i是G3的中期改款车型，定位紧凑型纯电SUV。以小巧灵活的车身和XNGP智驾为特色，搭载激光雷达和15.6英寸中控屏，CLTC续航最高520km，是城市通勤的理想选择。"
+  },
+  {
+    "id": "xpeng-mona-m03",
+    "brand_id": "xpeng",
+    "name": "MONA M03",
+    "name_en": "MONA M03",
+    "year": "2025",
+    "type": "紧凑型纯电轿车",
+    "manufacturer": "小鹏汽车（MONA）",
+    "images": [
+      "images/cars/xpeng/xpeng-mona-m03-01.png"
+    ],
+    "body": {
+      "length": "4780mm",
+      "width": "1896mm",
+      "height": "1445mm",
+      "wheelbase": "2815mm"
+    },
+    "common_features": [
+      "400V平台",
+      "智驾",
+      "15.6英寸中控屏",
+      "6扬声器",
+      "掀背尾门",
+      "全景天幕",
+      "低风阻0.23Cd"
+    ],
+    "trims": [
+      {
+        "name": "515km 标准版",
+        "price": "11.99万元",
+        "engine": "单电机前驱",
+        "power": "190马力 / 140kW",
+        "torque": "225N·m",
+        "acceleration": "7.8秒",
+        "battery": "51.8kWh 磷酸铁锂",
+        "range": "CLTC 515km",
+        "features": [
+          "400V平台",
+          "15.6英寸中控屏",
+          "掀背尾门",
+          "全景天幕",
+          "风阻0.23Cd"
+        ]
+      },
+      {
+        "name": "620km 长续航版",
+        "price": "14.99万元",
+        "engine": "单电机前驱",
+        "power": "218马力 / 160kW",
+        "torque": "250N·m",
+        "acceleration": "7.4秒",
+        "battery": "61.1kWh 磷酸铁锂",
+        "range": "CLTC 620km",
+        "features": [
+          "400V平台",
+          "15.6英寸中控屏",
+          "掀背尾门",
+          "全景天幕",
+          "风阻0.23Cd",
+          "智驾"
+        ]
+      }
+    ],
+    "paint_colors": [],
+    "interior_options": [],
+    "wheels": [],
+    "description": "MONA M03是小鹏汽车旗下MONA品牌首款车型，定位紧凑型纯电轿车。以11.99万起的亲民价格提供620km续航、0.23Cd超低风阻和掀背尾门，是年轻人第一台智能电动的理想选择。"
+  }
+]

@@ -1,0 +1,972 @@
+/* ============================================================
+   铃铛的车库 · 暗夜影院主题 v2
+   核心：我的收藏 = 每台车一屏的全屏大片展示
+   设计语言：暗黑 + 每车专属主题色 + 滚动驶入 + 扫光 + 参数弹出
+   ============================================================ */
+
+:root {
+  --bg: #06080f;
+  --bg-elev: #0e1420;
+  --bg-elev-2: #161e2e;
+  --border: #1e2a3d;
+  --border-glow: rgba(47, 129, 247, 0.55);
+  --text: #e8edf4;
+  --text-dim: #8b98ab;
+  --text-faint: #5b6a80;
+  --accent: #2f81f7;
+  --accent-2: #22d3ee;
+  --grad: linear-gradient(135deg, #2f81f7 0%, #22d3ee 100%);
+  --price: #ff5c7a;
+  --stage: #eef1f6;
+  --stage-2: #dfe5ee;
+  --radius: 16px;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --nav-h: 64px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+img { display: block; }
+
+/* ============ 导航栏 ============ */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 24px;
+  background: rgba(6, 8, 15, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-logo {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-search { flex: 1; max-width: 420px; margin: 0 auto; }
+
+.nav-search input {
+  width: 100%;
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.nav-search input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(47, 129, 247, 0.2);
+}
+
+.nav-search input::placeholder { color: var(--text-faint); }
+
+.nav-links { display: flex; gap: 18px; font-size: 14px; color: var(--text-dim); white-space: nowrap; }
+.nav-links a { transition: color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--text); }
+
+/* ============ 开场 Landing ============ */
+.landing {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 24px 80px;
+  overflow: hidden;
+}
+
+.landing-glow {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1100px;
+  height: 700px;
+  background: radial-gradient(closest-side, rgba(47, 129, 247, 0.2), rgba(34, 211, 238, 0.06) 55%, transparent);
+  pointer-events: none;
+  animation: glowPulse 6s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; }
+}
+
+.landing-title {
+  font-size: 84px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  line-height: 1.1;
+  animation: fadeUp 0.9s ease both;
+}
+
+.landing-title span {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.landing-sub {
+  margin-top: 18px;
+  font-size: 18px;
+  color: var(--text-dim);
+  animation: fadeUp 0.9s ease 0.15s both;
+}
+
+.landing-stats {
+  display: flex;
+  gap: 56px;
+  margin-top: 46px;
+  animation: fadeUp 0.9s ease 0.3s both;
+}
+
+.landing-stat { text-align: center; }
+
+.landing-stat .num {
+  font-size: 44px;
+  font-weight: 900;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.landing-stat .label { font-size: 13px; color: var(--text-faint); margin-top: 4px; letter-spacing: 1px; }
+
+.scroll-hint {
+  position: absolute;
+  bottom: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-faint);
+  animation: fadeUp 0.9s ease 0.45s both;
+}
+
+.scroll-hint .arrow { font-size: 20px; animation: bounce 1.6s infinite; }
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* ============ 收藏展示区（核心） ============ */
+.show {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(30, 42, 61, 0.5);
+}
+
+.show-glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(55% 70% at var(--gx, 70%) 50%, color-mix(in srgb, var(--car-color) 13%, transparent), transparent 70%);
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  pointer-events: none;
+}
+
+.show.in-view .show-glow { opacity: 1; }
+
+.show-inner {
+  position: relative;
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 48px;
+  align-items: center;
+  padding: 90px 0 70px;
+}
+
+.show-inner.rev { grid-template-columns: 1.15fr 1fr; }
+.show-inner.rev .show-stage { order: -1; }
+
+/* --- 文字侧 --- */
+.show-text { padding: 0 8px; }
+
+.show-brand {
+  font-size: 15px;
+  letter-spacing: 4px;
+  color: var(--car-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(22px);
+  transition: all 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) 0.1s;
+}
+
+.show-name {
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1.08;
+  margin-top: 8px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.75s cubic-bezier(0.2, 0.8, 0.2, 1) 0.22s;
+}
+
+.show-tagline {
+  font-size: 19px;
+  color: var(--text-dim);
+  margin-top: 16px;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: all 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) 0.34s;
+}
+
+.show-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.show-chip {
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--car-color) 45%, transparent);
+  color: color-mix(in srgb, var(--car-color) 75%, #fff);
+  background: color-mix(in srgb, var(--car-color) 9%, transparent);
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(18px) scale(0.92);
+  transition: all 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.show-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+  padding: 13px 30px;
+  border-radius: 999px;
+  background: var(--car-color);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 8px 26px color-mix(in srgb, var(--car-color) 35%, transparent);
+  opacity: 0;
+  transform: translateY(18px);
+  transition: all 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.show-btn:hover {
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 34px color-mix(in srgb, var(--car-color) 50%, transparent);
+}
+
+/* --- 车图侧 --- */
+.show-stage {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 72%, #f2f4f8 0%, #d9dfe9 78%, #c6cdda 100%);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  transform: translateX(var(--from, -80px)) scale(0.94);
+  transition: opacity 0.9s ease, transform 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.05s;
+}
+
+.show.in-view .show-stage { opacity: 1; transform: translateX(0) scale(1); }
+
+.show-imgwrap {
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.show-imgwrap img {
+  max-width: 92%;
+  max-height: 360px;
+  object-fit: contain;
+  transition: transform 0.8s ease;
+}
+
+.show-stage:hover .show-imgwrap img { transform: scale(1.05) translateY(-6px); }
+
+/* 扫光 */
+.show-sweep {
+  position: absolute;
+  top: -20%;
+  bottom: -20%;
+  width: 130px;
+  left: -200px;
+  background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transform: skewX(-18deg);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.show.in-view .show-sweep {
+  animation: sweep 1.4s ease 0.5s 1 forwards;
+}
+
+@keyframes sweep {
+  0% { left: -200px; opacity: 0; }
+  12% { opacity: 1; }
+  100% { left: 115%; opacity: 0; }
+}
+
+/* 铭牌 */
+.show-plate {
+  position: absolute;
+  left: 50%;
+  bottom: 26px;
+  transform: translateX(-50%) translateY(16px);
+  background: rgba(8, 12, 20, 0.82);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 3px;
+  padding: 9px 26px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--car-color) 55%, #fff);
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.6s ease 0.7s;
+}
+
+.show.in-view .show-plate { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* 触发后的文字动画 */
+.show.in-view .show-brand,
+.show.in-view .show-name,
+.show.in-view .show-tagline,
+.show.in-view .show-chip,
+.show.in-view .show-btn { opacity: 1; transform: none; }
+
+/* ============ 车库档案（页脚区） ============ */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 70px 24px 50px;
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 13px;
+}
+
+.archive-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+.archive-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.archive-link {
+  padding: 10px 26px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  color: var(--text-dim);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.25s;
+}
+
+.archive-link:hover {
+  border-color: var(--border-glow);
+  color: var(--text);
+  box-shadow: 0 0 16px rgba(47, 129, 247, 0.2);
+  transform: translateY(-2px);
+}
+
+.foot-grad {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* ============ 面包屑 ============ */
+.container { max-width: 1200px; margin: 0 auto; padding: 84px 24px 60px; }
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-faint);
+  margin: 4px 0 20px;
+}
+
+.breadcrumb a { color: var(--text-dim); transition: color 0.2s; }
+.breadcrumb a:hover { color: var(--accent-2); }
+.breadcrumb .sep { color: var(--text-faint); }
+
+/* ============ 区块标题 ============ */
+.section { margin-top: 48px; }
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border), transparent);
+}
+
+/* ============ 品牌卡（搜索页用） ============ */
+.brand-grid, .search-brand-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.search-brand-row { grid-column: 1 / -1; margin-bottom: 8px; }
+
+.brand-card {
+  position: relative;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 18px;
+  text-align: center;
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+  overflow: hidden;
+}
+
+.brand-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 60% at 50% 0%, rgba(47, 129, 247, 0.14), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.brand-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-glow);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 0 18px rgba(47, 129, 247, 0.12);
+}
+
+.brand-card:hover::before { opacity: 1; }
+.brand-card > * { position: relative; }
+
+.brand-logo {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  margin: 0 auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--stage);
+  border: 1px solid var(--border);
+  font-size: 26px;
+  font-weight: 800;
+  color: #1d2736;
+  transition: box-shadow 0.3s;
+}
+
+.brand-card:hover .brand-logo { box-shadow: 0 0 22px rgba(47, 129, 247, 0.4); }
+.brand-logo img { width: 100%; height: 100%; object-fit: cover; }
+
+.brand-name { font-size: 17px; font-weight: 700; }
+.brand-name-en { font-size: 12px; color: var(--text-faint); letter-spacing: 1px; margin-top: 3px; text-transform: uppercase; }
+
+.brand-count {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--accent-2);
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  border-radius: 999px;
+  padding: 3px 12px;
+}
+
+/* ============ chips 筛选 ============ */
+.chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+
+.chip {
+  padding: 7px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  color: var(--text-dim);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.chip:hover { color: var(--text); border-color: var(--text-faint); }
+
+.chip.active {
+  background: var(--grad);
+  border-color: transparent;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ============ 车型卡（品牌页/搜索页） ============ */
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 18px;
+}
+
+.car-card {
+  position: relative;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+  cursor: pointer;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-glow);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 0 18px rgba(47, 129, 247, 0.12);
+}
+
+.car-image {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 75%, var(--stage) 0%, var(--stage-2) 100%);
+  overflow: hidden;
+}
+
+.car-image img {
+  max-width: 82%;
+  max-height: 150px;
+  object-fit: contain;
+  transition: transform 0.45s ease;
+}
+
+.car-card:hover .car-image img { transform: scale(1.07); }
+.car-image .no-img { color: #93a1b5; font-size: 13px; }
+
+.car-price-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(7, 11, 18, 0.78);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  border: 1px solid var(--border);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+  z-index: 2;
+}
+
+.car-price-badge b { color: var(--price); }
+
+.car-info { padding: 16px; }
+.car-info .car-name { font-size: 16px; font-weight: 700; }
+.car-info .car-name-en { font-size: 12px; color: var(--text-faint); margin-top: 2px; letter-spacing: 0.5px; }
+.car-info .car-meta { font-size: 13px; color: var(--text-dim); margin-top: 8px; }
+
+.car-info .car-go {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: all 0.25s;
+}
+
+.car-card:hover .car-go { opacity: 1; transform: translateX(0); }
+
+/* ============ 品牌页头部 ============ */
+.brand-hero {
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  padding: 40px;
+  margin-bottom: 8px;
+}
+
+.brand-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(80% 120% at 85% 20%, rgba(47, 129, 247, 0.25), transparent 60%),
+              linear-gradient(120deg, var(--bg-elev) 0%, #0c1424 100%);
+}
+
+.brand-hero > * { position: relative; }
+.brand-hero .bh-top { display: flex; align-items: center; gap: 22px; }
+
+.brand-hero .brand-logo-lg {
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  background: var(--stage);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: #1d2736;
+  box-shadow: 0 0 28px rgba(47, 129, 247, 0.25);
+}
+
+.brand-hero .brand-logo-lg img { width: 100%; height: 100%; object-fit: cover; }
+.brand-hero h1 { font-size: 32px; font-weight: 800; }
+.brand-hero .bh-en { font-size: 14px; color: var(--text-faint); letter-spacing: 2px; margin-top: 2px; text-transform: uppercase; }
+.brand-hero .bh-meta { font-size: 13px; color: var(--accent-2); margin-top: 6px; }
+.brand-hero .bh-desc { font-size: 14px; color: var(--text-dim); margin-top: 16px; max-width: 720px; }
+
+/* ============ 品牌页工具栏 ============ */
+#toolbar { margin-bottom: 16px; }
+
+#toolbar input {
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  color: var(--text);
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#toolbar input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(47, 129, 247, 0.2);
+}
+
+#toolbar input::placeholder { color: var(--text-faint); }
+
+/* ============ 详情页 ============ */
+.detail-top {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.detail-image-card {
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: radial-gradient(circle at 50% 65%, var(--stage) 0%, var(--stage-2) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+  padding: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.detail-image-card img {
+  max-width: 92%;
+  max-height: 360px;
+  object-fit: contain;
+  transition: transform 0.5s;
+}
+
+.detail-image-card:hover img { transform: scale(1.04); }
+
+.detail-head-info {
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.detail-head-info h1 { font-size: 30px; font-weight: 800; }
+.detail-head-info .dh-sub { font-size: 14px; color: var(--text-dim); }
+
+.detail-head-info .dh-price {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--price);
+  margin-top: auto;
+}
+
+.detail-head-info .dh-price small { font-size: 13px; font-weight: 400; color: var(--text-faint); margin-left: 6px; }
+
+.quick-specs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.quick-spec {
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+
+.quick-spec:hover { border-color: var(--border-glow); }
+.quick-spec .qs-label { font-size: 11px; color: var(--text-faint); letter-spacing: 1px; }
+
+.quick-spec .qs-value {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 6px;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.panel {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  padding: 26px;
+  margin-top: 22px;
+}
+
+.panel h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.spec-item {
+  padding: 13px 16px;
+  background: var(--bg-elev-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.spec-item .spec-label { font-size: 11px; color: var(--text-faint); letter-spacing: 1px; }
+.spec-item .spec-value { font-size: 15px; font-weight: 600; margin-top: 4px; }
+
+.tag-list { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.tag {
+  background: rgba(47, 129, 247, 0.1);
+  border: 1px solid rgba(47, 129, 247, 0.3);
+  color: #7cb3ff;
+  padding: 5px 13px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.trim-list { display: flex; flex-direction: column; gap: 14px; }
+
+.trim-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+  background: var(--bg-elev-2);
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.trim-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(90% 130% at 100% 0%, rgba(47, 129, 247, 0.1), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.trim-card:hover {
+  border-color: var(--border-glow);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  transform: translateY(-2px);
+}
+
+.trim-card:hover::before { opacity: 1; }
+.trim-card > * { position: relative; }
+
+.trim-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.trim-name { font-size: 17px; font-weight: 700; }
+.trim-price { font-size: 22px; font-weight: 800; color: var(--price); }
+
+.trim-specs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 6px 14px;
+  margin-bottom: 12px;
+}
+
+.trim-spec-item { display: flex; flex-direction: column; padding: 5px 0; }
+.trim-spec-label { font-size: 11px; color: var(--text-faint); letter-spacing: 1px; }
+.trim-spec-item span:last-child { font-size: 14px; font-weight: 600; margin-top: 2px; }
+
+.trim-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.options-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+.options-row + .options-row { border-top: 1px solid var(--border); }
+.options-label { font-size: 13px; font-weight: 700; color: var(--text-dim); min-width: 80px; padding-top: 5px; }
+.options-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+
+.desc-text { font-size: 15px; color: #c3cdd9; line-height: 1.9; }
+
+/* ============ 搜索页 ============ */
+.search-header { padding: 26px 0 4px; }
+.search-header h1 { font-size: 26px; font-weight: 800; }
+.search-header .sh-sub { font-size: 14px; color: var(--text-dim); margin-top: 6px; }
+.search-header .sh-sub b { color: var(--accent-2); }
+
+/* ============ 空态 ============ */
+.empty {
+  text-align: center;
+  padding: 70px 20px;
+  color: var(--text-faint);
+  font-size: 15px;
+}
+
+.empty .empty-emoji { font-size: 44px; margin-bottom: 14px; }
+
+/* ============ 动画工具 ============ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up { animation: fadeUp 0.55s ease both; }
+.fade-up.d1 { animation-delay: 0.08s; }
+.fade-up.d2 { animation-delay: 0.16s; }
+.fade-up.d3 { animation-delay: 0.24s; }
+
+/* ============ 响应式 ============ */
+@media (max-width: 900px) {
+  .landing-title { font-size: 56px; }
+  .show-inner, .show-inner.rev { grid-template-columns: 1fr; gap: 28px; padding: 110px 0 60px; }
+  .show-inner.rev .show-stage { order: 0; }
+  .show-name { font-size: 44px; }
+  .show-imgwrap { height: 300px; }
+  .show-imgwrap img { max-height: 260px; }
+  .detail-top { grid-template-columns: 1fr; }
+  .detail-image-card { min-height: 260px; }
+}
+
+@media (max-width: 640px) {
+  .nav { padding: 0 14px; gap: 10px; }
+  .nav-logo { font-size: 15px; }
+  .nav-links { display: none; }
+  .landing { padding: 110px 14px 70px; }
+  .landing-title { font-size: 40px; letter-spacing: 3px; }
+  .landing-stats { gap: 30px; }
+  .landing-stat .num { font-size: 32px; }
+  .show-name { font-size: 34px; }
+  .show-imgwrap { height: 220px; padding: 20px; }
+  .show-imgwrap img { max-height: 190px; }
+  .container { padding: 84px 14px 40px; }
+  .brand-hero { padding: 24px 18px; }
+  .brand-hero .bh-top { flex-direction: column; text-align: center; }
+  .detail-image-card { min-height: 220px; padding: 16px; }
+  .detail-image-card img { max-height: 200px; }
+  .detail-head-info { padding: 20px; }
+  .car-image { height: 150px; }
+  .car-image img { max-height: 124px; }
+}

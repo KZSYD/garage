@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索 - 铃铛的车库</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav-logo" href="index.html">🔔 铃铛的车库</a>
+    <div class="nav-search">
+      <input type="text" id="nav-q" placeholder="搜索品牌 / 车型，如「SU7」「汉」「Model Y」…">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="index.html#showcase">我的收藏</a>
+      <a href="index.html#archive">车库档案</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="search-header">
+      <h1>🔍 搜索结果</h1>
+      <div class="sh-sub" id="sh-sub"></div>
+    </div>
+
+    <section class="section" style="margin-top:24px;">
+      <div class="car-grid" id="result-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><span class="foot-grad">🔔 铃铛的车库</span> · 数据仅供参考，具体以官方发布为准</div>
+  </footer>
+
+  <script src="data/brands.js"></script>
+  <script src="data/cars.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    var params = new URLSearchParams(window.location.search);
+    var q = (params.get('q') || '').trim();
+    var grid = document.getElementById('result-grid');
+    var sub = document.getElementById('sh-sub');
+
+    function emptyMsg(msg) {
+      return '<div class="empty"><div class="empty-emoji">🔍</div>' + msg + '</div>';
+    }
+
+    function doSearch(keyword) {
+      if (!keyword) {
+        sub.innerHTML = '请输入关键词';
+        grid.innerHTML = emptyMsg('在顶部搜索框输入品牌或车型名试试，如「小米」「ET9」');
+        return;
+      }
+
+      var kw = keyword.toLowerCase();
+      var brandHits = BRANDS_DATA.filter(function (b) {
+        return (b.name + ' ' + (b.name_en || '')).toLowerCase().indexOf(kw) !== -1;
+      });
+      var carHits = CARS_DATA.filter(function (c) {
+        var b = getBrandById(c.brand_id);
+        var hay = [c.name, c.name_en, c.sub_name, c.type, c.year, c.manufacturer, b ? b.name : '', b ? b.name_en : ''].join(' ').toLowerCase();
+        return hay.indexOf(kw) !== -1;
+      });
+
+      if (brandHits.length || carHits.length) {
+        sub.innerHTML = '「<b>' + LIB.esc(keyword) + '</b>」共找到 ' + (brandHits.length + carHits.length) + ' 个结果';
+      } else {
+        sub.innerHTML = '「<b>' + LIB.esc(keyword) + '</b>」没有找到结果';
+      }
+
+      var html = '';
+      // 品牌结果
+      if (brandHits.length) {
+        html += '<div class="search-brand-row" style="grid-column:1/-1;">';
+        for (var i = 0; i < brandHits.length; i++) {
+          html += LIB.brandCardHTML(brandHits[i]);
+        }
+        html += '</div>';
+      }
+      // 车型结果
+      for (var j = 0; j < carHits.length; j++) {
+        html += LIB.carCardHTML(carHits[j], j);
+      }
+      grid.innerHTML = html || emptyMsg('没有找到相关车型');
+    }
+
+    // 导航搜索框回车
+    var navInput = document.getElementById('nav-q');
+    navInput.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && navInput.value.trim()) {
+        var v = navInput.value.trim();
+        doSearch(v);
+        history.replaceState(null, '', 'search.html?q=' + encodeURIComponent(v));
+      }
+    });
+
+    doSearch(q);
+  </script>
+</body>
+</html>

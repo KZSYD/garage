@@ -1474,3 +1474,41 @@ img { display: block; }
   .drift-car { width: 90%; }
   .drift-photo img { max-height: 180px; }
 }
+/* ============================================================
+   3D 漂移视频开场（Remotion 渲染的 G63）
+   ============================================================ */
+
+.drift-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+  border-radius: 24px;
+  opacity: 0;
+}
+
+.drift-stage.video-active .drift-video {
+  animation: videoIn 0.7s ease 0.15s forwards;
+}
+
+@keyframes videoIn { to { opacity: 1; } }
+
+/* 视频模式：隐藏 SVG 车与扫光（视频自带） */
+.drift-stage.video-mode .drift-track,
+.drift-stage.video-mode .drift-car,
+.drift-stage.video-mode .cinema-sweep {
+  display: none;
+}
+
+/* 视频结束后淡入真实照片并隐藏视频 */
+.drift-stage.video-done .drift-video {
+  animation: videoOut 0.6s ease forwards;
+}
+
+@keyframes videoOut { to { opacity: 0; } }
+
+.drift-stage.video-done .drift-photo {
+  animation: photoIn 0.7s ease 0.2s forwards;
+}

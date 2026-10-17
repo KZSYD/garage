@@ -4361,4 +4361,73 @@ var CARS_DATA = [
     "wheels": [],
     "description": "MONA M03是小鹏汽车旗下MONA品牌首款车型，定位紧凑型纯电轿车。以11.99万起的亲民价格提供620km续航、0.23Cd超低风阻和掀背尾门，是年轻人第一台智能电动的理想选择。"
   }
+
+  ,
+  {
+    "id": "mercedes-g63",
+    "brand_id": "mercedes",
+    "name": "大G",
+    "name_en": "G 63 AMG",
+    "sub_name": "G 63",
+    "year": "2025",
+    "type": "中大型硬派越野SUV",
+    "manufacturer": "梅赛德斯-奔驰",
+    "images": [
+      "images/cars/mercedes/mercedes-g63-01.jpg",
+      "images/cars/mercedes/mercedes-g63-02.jpg"
+    ],
+    "body": {
+      "platform": "W465 非承载式车身",
+      "length": "4873mm",
+      "width": "1984mm",
+      "height": "1975mm",
+      "wheelbase": "2890mm",
+      "drive": "全时四驱 · 三把差速锁"
+    },
+    "common_features": [
+      "4.0T V8 双涡轮增压",
+      "AMG 9速自动变速箱",
+      "三把机械差速锁",
+      "LOW RANGE 低速越野挡",
+      "双12.3英寸大连屏",
+      "MBUX 智能交互系统",
+      "柏林之声音响",
+      "64色氛围灯"
+    ],
+    "trims": [
+      {
+        "name": "G 63 AMG",
+        "price": "255.4万元起",
+        "engine": "4.0T V8 双涡轮增压",
+        "power": "585马力",
+        "torque": "850牛·米",
+        "acceleration": "4.3秒",
+        "battery": "-",
+        "range": "-",
+        "features": [
+          "三把差速锁",
+          "AMG排气声浪",
+          "22英寸轮毂",
+          "红色AMG卡钳",
+          "柏林之声音响",
+          "Nappa真皮内饰"
+        ]
+      }
+    ],
+    "paint_colors": [
+      "曜岩黑",
+      "极地白",
+      "岩石灰",
+      "海贝银"
+    ],
+    "interior_options": [
+      "黑色Nappa真皮",
+      "红黑双色Nappa真皮"
+    ],
+    "wheels": [
+      "20英寸AMG五辐",
+      "22英寸AMG多辐"
+    ],
+    "description": "奔驰G 63 AMG，男人绕不开的方盒子。自1979年诞生以来，G级从未放弃非承载式车身与三把差速锁，方正造型四十余年未曾向风阻妥协。2025款搭载4.0T V8双涡轮增压发动机，585马力、850牛·米，零百4.3秒。它不是一辆车，是一个图腾。"
+  }
 ];

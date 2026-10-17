@@ -9,7 +9,7 @@
 <body>
 
   <nav class="nav">
-    <a class="nav-logo" href="index.html">🏁 男人的梦想车库</a>
+    <a class="nav-logo" href="index.html"><span class="logo-mark"></span>男人的梦想车库</a>
     <div class="nav-search">
       <input type="text" placeholder="搜索品牌 / 车型，如「SU7」「汉」「Model Y」…">
     </div>
@@ -29,7 +29,7 @@
   </main>
 
   <footer class="footer">
-    <div><span class="foot-grad">🏁 男人的梦想车库</span> · 数据仅供参考，具体以官方发布为准</div>
+    <div><span class="foot-grad"><span class="logo-mark"></span>男人的梦想车库</span> · 数据仅供参考，具体以官方发布为准</div>
   </footer>
 
   <script>document.documentElement.classList.add('js-anim');</script>
@@ -201,7 +201,7 @@
     html += '    <h1 class="cinema-name">' + nameChars + '</h1>';
     html += '    <div class="cinema-sub">' + esc((brand && brand.name_en ? brand.name_en + ' ' : '') + (car.name_en || '')) + ' · ' + esc(car.year || '') + ' · ' + esc(car.type || '') + '</div>';
     if (pFirst) html += '    <div class="cinema-price"><span class="cnum" id="price-num"></span></div>';
-    html += '    <div class="cinema-cta"><a href="#trims">💰 看配置 &amp; 价格</a><a href="#gallery">🖼️ 看图库</a></div>';
+    html += '    <div class="cinema-cta"><a href="#trims">查看配置与价格</a><a href="#gallery">查看图库</a></div>';
     html += '  </div>';
     html += '</section>';
 
@@ -222,7 +222,7 @@
 
     // ============ 3. 图库（多图轮播） ============
     if (car.images && car.images.length > 1) {
-      html += '<div class="panel reveal" id="gallery"><h3>🖼️ 图库</h3>';
+      html += '<div class="panel reveal" id="gallery"><h3><span class="sec-no">02</span> 图库</h3>';
       html += '  <div class="gallery">';
       html += '    <button class="gal-arrow prev" aria-label="上一张">‹</button>';
       html += '    <div class="gallery-main" id="gal-main"></div>';
@@ -234,7 +234,7 @@
     // ============ 4. 车身参数 ============
     if (car.body) {
       var bodyMap = { platform: '平台', length: '车长', width: '车宽', height: '车高', wheelbase: '轴距', drive: '驱动形式', transmission: '变速箱' };
-      html += '<div class="panel reveal"><h3>📐 车身参数</h3><div class="specs-grid">';
+      html += '<div class="panel reveal"><h3><span class="sec-no">03</span> 车身参数</h3><div class="specs-grid">';
       for (var bk in car.body) {
         if (car.body.hasOwnProperty(bk)) {
           html += '<div class="spec-item"><div class="spec-label">' + esc(bodyMap[bk] || bk) + '</div><div class="spec-value">' + esc(car.body[bk]) + '</div></div>';
@@ -245,7 +245,7 @@
 
     // ============ 5. 全系标配 ============
     if (car.common_features && car.common_features.length) {
-      html += '<div class="panel reveal"><h3>✨ 全系标配</h3><div class="tag-list">';
+      html += '<div class="panel reveal"><h3><span class="sec-no">04</span> 全系标配</h3><div class="tag-list">';
       for (var cf = 0; cf < car.common_features.length; cf++) {
         html += '<span class="tag">' + esc(car.common_features[cf]) + '</span>';
       }
@@ -254,7 +254,7 @@
 
     // ============ 6. 在售配置（性能条 + 徽章） ============
     if (car.trims && car.trims.length) {
-      html += '<div class="panel reveal" id="trims"><h3>💰 ' + esc(car.year || '') + ' 在售车型 &amp; 价格</h3><div class="trim-list">';
+      html += '<div class="panel reveal" id="trims"><h3><span class="sec-no">05</span> ' + esc(car.year || '') + ' 在售配置</h3><div class="trim-list">';
       for (var ti = 0; ti < car.trims.length; ti++) {
         var trim = car.trims[ti];
         var ta = LIB.numOrNull(trim.acceleration);
@@ -264,8 +264,8 @@
         html += '  <div class="trim-header">';
         html += '    <div><div class="trim-name">' + esc(trim.name) + '</div>';
         html += '      <div class="trim-badges">';
-        if (ti === car._fastIdx) html += '<span class="trim-badge fast">⚡ 最快零百</span>';
-        if (ti === car._cheapIdx) html += '<span class="trim-badge cheap">💰 最低入手</span>';
+        if (ti === car._fastIdx) html += '<span class="trim-badge fast">最快零百</span>';
+        if (ti === car._cheapIdx) html += '<span class="trim-badge cheap">最低入手</span>';
         html += '      </div></div>';
         html += '    <div class="trim-price">' + esc(trim.price) + '</div>';
         html += '  </div>';
@@ -294,7 +294,7 @@
     // ============ 7. 外观内饰选项 ============
     var hasOpt = (car.paint_colors && car.paint_colors.length) || (car.interior_options && car.interior_options.length) || (car.wheels && car.wheels.length);
     if (hasOpt) {
-      html += '<div class="panel reveal"><h3>🎨 外观 &amp; 内饰选项</h3>';
+      html += '<div class="panel reveal"><h3><span class="sec-no">06</span> 外观与内饰</h3>';
       var optGroups = [
         { label: '车漆颜色', items: car.paint_colors },
         { label: '内饰颜色', items: car.interior_options },
@@ -314,7 +314,7 @@
 
     // ============ 8. 车型简介 ============
     if (car.description) {
-      html += '<div class="panel reveal"><h3>📖 车型简介</h3><p class="desc-text">' + esc(car.description) + '</p></div>';
+      html += '<div class="panel reveal"><h3><span class="sec-no">07</span> 车型简介</h3><p class="desc-text">' + esc(car.description) + '</p></div>';
     }
 
     detailEl.innerHTML = html;

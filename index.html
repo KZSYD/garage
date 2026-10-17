@@ -26,9 +26,9 @@
     <h1 class="landing-title">男人的<em>梦想车库</em></h1>
     <p class="landing-sub">不罗列所有车型，只停放男人的梦想</p>
     <div class="landing-stats">
-      <div class="landing-stat"><div class="num" id="stat-favs">--</div><div class="label">梦想座驾</div></div>
-      <div class="landing-stat"><div class="num" id="stat-brands">--</div><div class="label">个品牌</div></div>
-      <div class="landing-stat"><div class="num" id="stat-hp">--</div><div class="label">匹马力</div></div>
+      <div class="landing-stat"><div class="num" id="stat-favs" data-count="0">0</div><div class="label">梦想座驾</div></div>
+      <div class="landing-stat"><div class="num" id="stat-brands" data-count="0">0</div><div class="label">个品牌</div></div>
+      <div class="landing-stat"><div class="num" id="stat-hp" data-count="0">0</div><div class="label">匹马力</div></div>
     </div>
     <div class="scroll-hint" id="scroll-hint">向下滚动</div>
   </header>
@@ -52,6 +52,7 @@
   <script src="js/data.js"></script>
   <script src="js/favorites.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/effects.js"></script>
   <script>
     (function () {
     // ===== 开场统计 =====
@@ -67,9 +68,9 @@
         }
       }
     }
-    document.getElementById('stat-favs').textContent = favCars.length;
-    document.getElementById('stat-brands').textContent = Object.keys(favBrandIds).length;
-    document.getElementById('stat-hp').textContent = maxHp || '—';
+    document.getElementById('stat-favs').setAttribute('data-count', favCars.length);
+    document.getElementById('stat-brands').setAttribute('data-count', Object.keys(favBrandIds).length);
+    document.getElementById('stat-hp').setAttribute('data-count', maxHp || 0);
     // 空车库时隐藏“下滑”提示
     if (!favCars.length) document.getElementById('scroll-hint').style.display = 'none';
 
@@ -168,6 +169,7 @@
     for (var i2 = 0; i2 < shows.length; i2++) observer.observe(shows[i2]);
 
     LIB.initSearch();
+    if (window.FX) FX.refresh();
     })();
   </script>
 </body>

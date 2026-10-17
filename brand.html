@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>品牌车型 - 铃铛的车库</title>
+  <title>品牌车型 - 男人的梦想车库</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <nav class="nav">
-    <a class="nav-logo" href="index.html">🔔 铃铛的车库</a>
+    <a class="nav-logo" href="index.html">🏁 男人的梦想车库</a>
     <div class="nav-search">
       <input type="text" placeholder="搜索品牌 / 车型，如「SU7」「汉」「Model Y」…">
     </div>
@@ -37,7 +37,7 @@
   </main>
 
   <footer class="footer">
-    <div><span class="foot-grad">🔔 铃铛的车库</span> · 数据仅供参考，具体以官方发布为准</div>
+    <div><span class="foot-grad">🏁 男人的梦想车库</span> · 数据仅供参考，具体以官方发布为准</div>
   </footer>
 
   <script src="data/brands.js"></script>
@@ -62,7 +62,7 @@
       if (!brand) {
         gridEl.innerHTML = emptyMsg('未找到该品牌');
       } else {
-        document.title = brand.name + ' - 铃铛的车库';
+        document.title = brand.name + ' - 男人的梦想车库';
         document.getElementById('bc-brand').textContent = brand.name;
 
         // ===== 品牌头部 =====

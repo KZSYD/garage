@@ -152,7 +152,15 @@
     html += '  <div class="cinema-glow"></div>';
     html += '  <div class="cinema-stage drift-stage">';
     html += '    <span class="cinema-sweep"></span>';
-    // 漂移跑道：轮胎痕迹 + 烟尘
+    // 3D 漂移视频（Remotion 渲染；仅收藏内有视频的车型使用）
+    var driftVideo = car.id === 'mercedes-g63' ? 'video/g63-drift.mp4' : '';
+    if (driftVideo) {
+      html += '    <video class="drift-video" id="drift-video" muted playsinline preload="auto" poster="video/g63-poster.jpg">';
+      html += '      <source src="' + driftVideo + '" type="video/mp4">';
+      html += '    </video>';
+    }
+    // SVG 动画车（无视频车型回退方案）
+    if (!driftVideo) {
     html += '    <svg class="drift-track" viewBox="0 0 700 420" preserveAspectRatio="xMidYMid meet" aria-hidden="true">';
     html += '      <path class="drift-mark m1" d="M620 350 Q540 344 470 356 Q400 368 350 344 Q300 320 260 300" />';
     html += '      <path class="drift-mark m2" d="M640 378 Q560 372 490 382 Q420 392 370 372 Q320 352 280 334" />';
@@ -163,7 +171,6 @@
     html += '        <circle class="puff p4" cx="600" cy="386" r="20"/>';
     html += '      </g>';
     html += '    </svg>';
-    // SVG 动画车（硬派方盒子造型，呼应大G）
     html += '    <svg class="drift-car" viewBox="0 0 340 170" aria-hidden="true">';
     html += '      <g class="car-body">';
     html += '        <path class="car-shadow" d="M34 146 Q170 156 308 142 L316 152 Q170 168 24 152 Z"/>';
@@ -185,7 +192,8 @@
     html += '        <g class="wheel w2"><circle class="tire" r="23"/><circle class="rim" r="11"/><g class="spokes"><rect x="-1.5" y="-10" width="3" height="20"/><rect x="-10" y="-1.5" width="20" height="3"/></g></g>';
     html += '      </g>';
     html += '    </svg>';
-    // 真实照片（漂移完成后淡入）
+    }
+    // 真实照片（视频/SVG 漂移完成后淡入）
     html += '    <div class="drift-photo">' + (mainImg ? '<img src="' + esc(mainImg) + '" alt="' + esc(car.name) + '" onerror="this.parentNode.innerHTML=\'<div class=\\\'no-img\\\'>暂无图片</div>\'">' : '<div class="no-img">暂无图片</div>') + '</div>';
     html += '  </div>';
     html += '  <div class="cinema-info">';
@@ -313,21 +321,47 @@
 
     // ============ 漂移登场触发 ============
     var driftStage = detailEl.querySelector('.drift-stage');
+    var driftVideoEl = detailEl.querySelector('.drift-video');
     if (driftStage) {
       // 用户若开启了减少动效，直接显示照片
       if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        driftStage.classList.add('drift-active');
-        var dp = driftStage.querySelector('.drift-photo');
-        if (dp) dp.style.opacity = '1';
-        var dcar = driftStage.querySelector('.drift-car');
-        if (dcar) dcar.style.display = 'none';
+        driftStage.classList.add('drift-active', 'drift-done');
+        var dpR = driftStage.querySelector('.drift-photo');
+        if (dpR) dpR.style.opacity = '1';
+        var dcarR = driftStage.querySelector('.drift-car');
+        if (dcarR) dcarR.style.display = 'none';
+        if (driftVideoEl) driftVideoEl.style.display = 'none';
       } else {
-        // 页面加载后立即开漂
-        requestAnimationFrame(function () {
-          requestAnimationFrame(function () { driftStage.classList.add('drift-active'); });
-        });
-        // 动画结束后进入「停稳」状态：照片定住、SVG 车退场
-        setTimeout(function () { driftStage.classList.add('drift-done'); }, 3100);
+        // 有 3D 视频：播视频 → 播完淡入照片
+        if (driftVideoEl) {
+          driftStage.classList.add('video-mode');
+          var photo = driftStage.querySelector('.drift-photo');
+          var startVid = function () {
+            driftStage.classList.add('video-active');
+            driftVideoEl.play().then(function () {}).catch(function () {});
+          };
+          driftVideoEl.addEventListener('canplay', startVid, { once: true });
+          driftVideoEl.addEventListener('loadeddata', startVid, { once: true });
+          driftVideoEl.addEventListener('ended', function () {
+            driftStage.classList.add('video-done');
+            driftVideoEl.style.display = 'none';
+          });
+          // 兜底：3.2 秒后若视频未播（如加载失败），直接显示照片
+          setTimeout(function () {
+            if (!driftVideoEl.ended && driftVideoEl.currentTime < 0.05) {
+              driftStage.classList.add('video-done');
+              driftVideoEl.style.display = 'none';
+              driftStage.classList.remove('video-mode');
+            }
+          }, 4200);
+        } else {
+          // 无视频：SVG 动画车漂移
+          requestAnimationFrame(function () {
+            requestAnimationFrame(function () { driftStage.classList.add('drift-active'); });
+          });
+          // 动画结束后进入「停稳」状态
+          setTimeout(function () { driftStage.classList.add('drift-done'); }, 3100);
+        }
       }
     }
 
